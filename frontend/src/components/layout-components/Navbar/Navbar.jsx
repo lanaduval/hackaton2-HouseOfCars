@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { stack as Menu } from "react-burger-menu";
 import logo from "../../../assets/logo.svg";
 import "./Navbar.css";
@@ -18,15 +19,15 @@ export default function Navbar() {
         </a> */}
       </header>
       <Menu outerContainerId="outer-container">
-        <a className="menu-item" href="/">
+        <Link to="/" className="menu-item">
           Accueil
-        </a>
-        <a className="menu-item" href="/trucs">
+        </Link>
+        <Link to="/trucs" className="menu-item">
           Trucs de machins
-        </a>
-        <a className="menu-item" href="/contact">
+        </Link>
+        <Link to="/contact" className="menu-item">
           Nous contacter
-        </a>
+        </Link>
       </Menu>
     </div>
   );

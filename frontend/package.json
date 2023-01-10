@@ -13,9 +13,11 @@
     "axios": "^1.2.2",
     "prop-types": "^15.8.1",
     "react": "^18.0.0",
+    "react-burger-menu": "^3.0.9",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.6.1",
-    "react-toastify": "^9.1.1"
+    "react-toastify": "^9.1.1",
+    "template-fullstack": "file:.."
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",

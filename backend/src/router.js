@@ -10,4 +10,9 @@ router.put("/items/:id", itemControllers.edit);
 router.post("/items", itemControllers.add);
 router.delete("/items/:id", itemControllers.destroy);
 
+const carControllers = require("./controllers/carsControllers");
+
+router.get("/cars", carControllers.browse);
+router.post("/cars", carControllers.add);
+
 module.exports = router;

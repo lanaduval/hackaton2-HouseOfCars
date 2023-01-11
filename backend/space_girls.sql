@@ -1,0 +1,27 @@
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE users (
+  id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  firstname VARCHAR (255) NOT NULL,
+  lastname VARCHAR (255) NOT NULL,
+  role ENUM('admin', 'user') NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  pwd VARCHAR(255) NOT NULL
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb3;
+
+DROP TABLE IF EXISTS cars;
+
+CREATE TABLE cars (
+  id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  make VARCHAR (255) NOT NULL,
+  model VARCHAR (255) NOT NULL,
+  autonomy VARCHAR (255) NOT NULL,
+  city VARCHAR (255) NOT NULL,
+  miles INT NOT NULL,
+  year INT NOT NULL,
+  seats INT NOT NULL,
+  available BOOLEAN NOT NULL,
+  type ENUM('confort', 'casual') NOT NULL,
+  users_id INT DEFAULT NULL,
+  CONSTRAINT fk_decision_users FOREIGN KEY (users_id) REFERENCES users(id)
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb3;

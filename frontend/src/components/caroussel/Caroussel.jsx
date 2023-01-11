@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Caroussel({ models }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  
+
   const handlePrevClick = () => {
     const nextIndex = currentIndex === 0 ? models.length - 1 : currentIndex - 1;
     setCurrentIndex(nextIndex);
   };
-  
+
   const handleNextClick = () => {
     const nextIndex = currentIndex === models.length - 1 ? 0 : currentIndex + 1;
     setCurrentIndex(nextIndex);
@@ -16,10 +16,13 @@ function Caroussel({ models }) {
   return (
     <div>
       <button onClick={handlePrevClick}>Prev</button>
-      <img src={models[currentIndex].imageUrl} alt={models[currentIndex].name} />
+      <img
+        src={models[currentIndex].imageUrl}
+        alt={models[currentIndex].name}
+      />
       <button onClick={handleNextClick}>Next</button>
     </div>
   );
-};
+}
 
 export default Caroussel;

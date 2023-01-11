@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { loadStripe } from '@stripe/stripe-js';
+import React, { useState } from "react";
+import { loadStripe } from "@stripe/stripe-js";
 import {
   CardElement,
   Elements,
   useStripe,
   useElements,
-} from '@stripe/react-stripe-js';
+} from "@stripe/react-stripe-js";
 import "./Paiement.css";
 
-const PaymentForm = () => {
+function PaymentForm() {
   const stripe = useStripe();
   const elements = useElements();
   const [error, setError] = useState(null);
@@ -17,7 +17,7 @@ const PaymentForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const { error, paymentMethod } = await stripe.createPaymentMethod({
-      type: 'card',
+      type: "card",
       card: elements.getElement(CardElement),
     });
 
@@ -27,7 +27,7 @@ const PaymentForm = () => {
     } else {
       // Send paymentMethod.id to your server
       // const { data } = await axios.post('/pay', { paymentMethodId: paymentMethod.id });
-      
+
       setError(null);
       setPaymentSuccess(true);
     }
@@ -49,16 +49,16 @@ const PaymentForm = () => {
       )}
     </form>
   );
-};
+}
 
-const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
+const stripePromise = loadStripe("pk_test_TYooMQauvdEDq54NiTphI7jx");
 
-const PaymentPage = () => {
+function PaymentPage() {
   return (
     <Elements stripe={stripePromise}>
       <PaymentForm />
     </Elements>
   );
-};
+}
 
 export default PaymentPage;

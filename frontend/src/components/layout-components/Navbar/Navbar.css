@@ -13,7 +13,7 @@
 
 /*Link hover*/
 .bm-item:hover {
-  color: #aed768;
+  color: #bf3e9f;
 }
 
 /*Button menu burger*/
@@ -27,7 +27,7 @@
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #aed768;
+  background: #bf3e9f;
 }
 
 /* Position and sizing of clickable cross button */
@@ -38,33 +38,65 @@
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #aed768;
+  background: #bf3e9f;
 }
 
 /* General sidebar styles */
 .bm-menu {
-  background: #202020;
+  background: #0b0e20;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
 
 /* Styling of overlay */
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+  background: #0b0e20;
 }
 
 #outer-container {
   height: 6.5rem;
-  background-color: #202020;
+  background-color: #0b0e20;
 }
 
 .header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
   height: inherit;
 }
 
 .logo {
-  width: 70px;
+  width: 200px;
+}
+
+.login_button {
+  width: 8rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  background-color: #BF3E9F;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.login_button:hover {
+  background-color: #BF3E9F;
+  color: #0B0E20;
+}
+
+.login_button:active {
+  background-color: #BF3E9F;
+  color: rgb(77, 79, 81);
+}
+
+
+@media screen and (max-width: 391px) {
+  .logo {
+    width: 120px;
+    margin-left: 7rem;
+    margin-right: 1rem;
+
+  }
 }

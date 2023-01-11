@@ -12,6 +12,19 @@ const browse = (req, res) => {
     });
 };
 
+const carsID = (req, res) => {
+  const id = req.params;
+  models.cars
+    .find(id)
+    .then(([rows]) => {
+      res.send(rows);
+    })
+    .catch((err) => {
+      console.error(err);
+      res.sendStatus(500);
+    });
+};
+
 const add = (req, res) => {
   const cars = req.body;
 
@@ -31,4 +44,5 @@ const add = (req, res) => {
 module.exports = {
   browse,
   add,
+  carsID,
 };

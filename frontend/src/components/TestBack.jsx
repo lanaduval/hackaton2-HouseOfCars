@@ -13,7 +13,6 @@ export default function TestBack() {
         console.error(err);
       });
   }, []);
-console.log(cars);
   return (
     <div>
       {cars.map((car,index) => (

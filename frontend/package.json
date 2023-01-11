@@ -10,6 +10,8 @@
     "fix": "prettier --write . && eslint --fix --ext .jsx ."
   },
   "dependencies": {
+    "@stripe/react-stripe-js": "^1.16.3",
+    "@stripe/stripe-js": "^1.46.0",
     "@lottiefiles/react-lottie-player": "^3.5.0",
     "axios": "^1.2.2",
     "prop-types": "^15.8.1",

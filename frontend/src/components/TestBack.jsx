@@ -13,10 +13,12 @@ export default function TestBack() {
         console.error(err);
       });
   }, []);
-console.log(cars);
+
+  console.log(cars);
+
   return (
     <div>
-      {cars.map((car,index) => (
+      {cars.map((car, index) => (
         <>
           <h1 key={index}>{car.model}</h1>
           <h2>{car.make}</h2>

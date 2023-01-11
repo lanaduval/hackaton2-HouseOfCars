@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "./Cards.css";
 import ImageCard from '@components/ImageCard';
 
@@ -22,15 +22,16 @@ function Card() {
     const handleSaveCard = (id) => {
       const newCards = cards.map(card => {
         if (card.id === id) {
-          return { id };
+          return {
+            id,
+            content: card.content,
+            image: URL.createObjectURL(e.target.files[0]),
+          };
         }
         return card;
       });
       setCards(newCards);
     };
-
-  
-
     // const handleAddImage = id => {
     //     const input = document.createElement("input");
     //     input.type = "file";

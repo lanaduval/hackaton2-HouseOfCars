@@ -19,7 +19,7 @@ export default function Navbar() {
           </Link>
         </Menu>
         <img className="logo" src={logo} alt="Logo" />
-        <Link to="/loggin">
+        <Link to="/login">
           <button type="button" className="login_button">
             Login
           </button>

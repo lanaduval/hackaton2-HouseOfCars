@@ -73,7 +73,7 @@
   width: 8rem;
   height: 3rem;
   border-radius: 0.5rem;
-  background-color: #BF3E9F;
+  background-color: #bf3e9f;
   font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
@@ -82,21 +82,19 @@
 }
 
 .login_button:hover {
-  background-color: #BF3E9F;
-  color: #0B0E20;
+  background-color: #bf3e9f;
+  color: #0b0e20;
 }
 
 .login_button:active {
-  background-color: #BF3E9F;
+  background-color: #bf3e9f;
   color: rgb(77, 79, 81);
 }
-
 
 @media screen and (max-width: 391px) {
   .logo {
     width: 120px;
     margin-left: 7rem;
     margin-right: 1rem;
-
   }
 }

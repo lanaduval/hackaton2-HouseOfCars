@@ -10,7 +10,7 @@ export default function Footer() {
 
   return (
     <footer>
-      <p id="copyrigth">Le truc pour Amazon</p>
+      <p id="copyrigth">House of Cars</p>
       <div className="container-social">
         <a href={twitterLink} target="twitter icon social">
           <img src={twitter} alt="twitter" className="social" />

@@ -1,33 +1,33 @@
 const AbstractManager = require("./AbstractManager");
 
-class CompagnyManager extends AbstractManager {
+class CompanyManager extends AbstractManager {
   constructor() {
-    super({ table: "compagny" });
+    super({ table: "company" });
   }
 
   findAll() {
     return this.connection.query(`select * from  ${this.table}`);
   }
 
-  insert(compagny) {
+  insert(company) {
     return this.connection.query(
       `insert into ${this.table} (name, email, password, siret) values (?, ?, ?, ?)`,
-      [compagny.name, compagny.email, compagny.hashedPassword, compagny.siret]
+      [company.name, company.email, company.hashedPassword, company.siret]
     );
   }
 
-  update(compagny) {
+  update(company) {
     return this.connection.query(
       `update ${this.table} set name= ?, email= ?, password= ?, siret = ? where id = ?`,
       [
-        compagny.name,
-        compagny.email,
-        compagny.hashedPassword,
-        compagny.siret,
-        compagny.id,
+        company.name,
+        company.email,
+        company.hashedPassword,
+        company.siret,
+        company.id,
       ]
     );
   }
 }
 
-module.exports = CompagnyManager;
+module.exports = CompanyManager;

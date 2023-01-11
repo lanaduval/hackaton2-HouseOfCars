@@ -18,9 +18,9 @@ router.post("/cars", carControllers.add);
 
 // COMPAGNY
 
-const compagnyController = require("./controllers/compagnyControllers");
+const companyControllers = require("./controllers/companyControllers");
 
-router.post("/register", compagnyController.add);
-router.put("/register", compagnyController.put);
+router.post("/register", companyControllers.add);
+router.put("/register", companyControllers.put);
 
 module.exports = router;

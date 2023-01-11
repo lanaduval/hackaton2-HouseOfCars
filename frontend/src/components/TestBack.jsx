@@ -6,8 +6,8 @@ export default function TestBack() {
     useEffect(() => {
     instance
       .get("/cars")
-      .then((data) => {
-        setCars(data);
+      .then((result) => {
+        setCars(result.data);
       })
       .catch((err) => {
         console.error(err);
@@ -16,7 +16,11 @@ export default function TestBack() {
 console.log(cars);
   return (
     <div>
-      <h1>o</h1>
+      {cars.map((car,index) => (
+        <h1 key={index}>{car.make}</h1>
+        
+      ))}
+      <h1> o </h1>
     </div>
   );
 }

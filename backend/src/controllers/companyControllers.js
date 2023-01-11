@@ -2,7 +2,7 @@ const { verify, hash, argon2id } = require("argon2");
 const models = require("../models");
 
 const browse = (req, res) => {
-  models.compagny
+  models.company
     .findAll()
     .then(([rows]) => {
       res.send(rows);
@@ -22,14 +22,14 @@ const add = (req, res) => {
     parallelism: 1,
   };
   hash(password, hashingOptions).then((hashedPassword) => {
-    const compagny = {
+    const company = {
       ...req.body,
       hashedPassword,
     };
 
     // TODO validations (length, format...)
 
-    models.compagny.insert(compagny).then(([rows]) => {
+    models.company.insert(company).then(([rows]) => {
       if (rows.affectedRows === 1) {
         return res.status(201).json({ success: "User saved" });
       }
@@ -38,12 +38,12 @@ const add = (req, res) => {
   });
 };
 const put = (req, res) => {
-  const compagny = req.body;
+  const company = req.body;
 
   // TODO validations (length, format...)
 
-  models.compagny
-    .update(compagny)
+  models.company
+    .update(company)
     .then(([result]) => {
       res.location(`/cars/${result.insertId}`).sendStatus(201);
     })

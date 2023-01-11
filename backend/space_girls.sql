@@ -9,9 +9,9 @@ CREATE TABLE resa (
   end DATE NOT NULL
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb3;
 
-DROP TABLE IF EXISTS compagny;
+DROP TABLE IF EXISTS company;
 
-CREATE TABLE compagny (
+CREATE TABLE company (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     name VARCHAR (255) NOT NULL,
   email VARCHAR(255) NOT NULL,
@@ -33,19 +33,19 @@ CREATE TABLE cars (
   available BOOLEAN NOT NULL,
   type ENUM('confort', 'casual') NOT NULL,
   resa_id INT DEFAULT NULL,
-compagny_id INT DEFAULT NULL,
+company_id INT DEFAULT NULL,
   CONSTRAINT fk_resa FOREIGN KEY (resa_id) REFERENCES resa(id),
-  CONSTRAINT fk_compagny FOREIGN KEY (compagny_id) REFERENCES compagny(id)
+  CONSTRAINT fk_company FOREIGN KEY (company_id) REFERENCES company(id)
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb3;
 
 
-INSERT into compagny (name, email, password, siret) 
+INSERT into company (name, email, password, siret) 
 VALUES ("Fly","fly@fly.com","$argon2id$v=19$m=65536,t=5,p=1$2tyHzTqzwVk1kHVa/iNdXA$zH/9YxMB166yoM2AVJfGhDJ1UxXhIMqED3LCW1h5ELw","123 568 941 00056"),
 ("Septa","septa@septa.com","$argon2id$v=19$m=65536,t=5,p=1$hUrWsPz/JkKrUY2nZ6WgAA$+G/roQ8GGH3afGVqvMww/q0V/HtKfDj4z3jd+oSgHkY","124 666 941 00088"),
 ("Rent and Drive","rent@drive.com","$argon2id$v=19$m=65536,t=5,p=1$TIttNN/GMIJiiaPkGcxI0A$bjjezkW9/f09CxslK8RSmwGL9Gr4XO/ihPmVGC4/evY","234 666 941 00477")
 ;
 
-INSERT into cars (make, model, autonomy, city, miles, year, seats, available, type, compagny_id) 
+INSERT into cars (make, model, autonomy, city, miles, year, seats, available, type, company_id) 
 VALUES ('Renault','Twizy E-tech','60 miles','Paris','150','2019','2','0','casual','1'),
 ('Renault','Twingo E-tech','110 miles','Paris','290','2019','4','0','casual','1'),
 ('Renault','Zoe E-tech','234 miles','Paris','230','2021','4','0','casual','1'),

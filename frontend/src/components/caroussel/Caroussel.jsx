@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Carousel({ models }) {
+function Caroussel({ models }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   
   const handlePrevClick = () => {
@@ -22,4 +22,4 @@ function Carousel({ models }) {
   );
 };
 
-export default Carousel;
+export default Caroussel;

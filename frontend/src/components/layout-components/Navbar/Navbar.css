@@ -1,0 +1,70 @@
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+@import url(https://fonts.googleapis.com/css?family=Audiowide:regular); */
+
+/*Link style*/
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+  margin-right: 1rem;
+}
+
+/*Link hover*/
+.bm-item:hover {
+  color: #aed768;
+}
+
+/*Button menu burger*/
+.bm-burger-button {
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #aed768;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #aed768;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #202020;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#outer-container {
+  height: 6.5rem;
+  background-color: #202020;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+}
+
+.logo {
+  width: 70px;
+}

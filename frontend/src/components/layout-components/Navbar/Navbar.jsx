@@ -22,11 +22,11 @@ export default function Navbar() {
         <Link to="/" className="menu-item">
           Accueil
         </Link>
-        <Link to="/trucs" className="menu-item">
-          Trucs de machins
+        <Link to="/about" className="menu-item">
+          About
         </Link>
         <Link to="/contact" className="menu-item">
-          Nous contacter
+          Contact
         </Link>
       </Menu>
     </div>

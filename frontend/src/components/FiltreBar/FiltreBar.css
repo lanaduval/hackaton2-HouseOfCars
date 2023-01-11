@@ -1,0 +1,45 @@
+.filtre_subnav {
+  display: flex;
+  justify-content: center;
+  background-color: #6c85d6;
+  height: 5rem;
+  margin-top: 1rem;
+}
+
+.form_filtre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+label {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+select {
+  width: 8rem;
+  margin-left: 2rem;
+  border: none;
+  border-radius: 3px;
+  height: 1.5rem;
+  font-size: 1rem;
+  color: #0b0e20;
+  margin: 20px;
+}
+
+option {
+  text-align: center;
+  margin-bottom: 5px;
+  border: none;
+}
+
+@media screen and (max-width: 391px) {
+  .form_filtre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+  }
+}

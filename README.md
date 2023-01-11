@@ -1,35 +1,47 @@
-## Concept
+# {Hackhaton AWS - House Of Cars} 
 
-This template is meant to serve as a foundation for every P2/P3 following the React-Express-MySQL stack, as learned in Wild Code School.
-It's pre-configured with a set of tools which'll help students produce industry-quality and easier-to-maintain code, while staying as simple as possible to use.
+> Development of a fleet management application for AWS.
 
-## Setup & Use
+## Team 🎀
 
-### Project Initialization
+- Alicia Dupil
+- Lana Duval
+- Laure Janin
+- Vivien Mereaux
+- Sébastien Artesi
 
-- In VSCode, install plugins **Prettier - Code formatter** and **ESLint** and configure them
-- Clone this repo, enter it
-- Run command `npm run setup`
-- _NB: To launch the backend server, you'll need an environment file with database credentials. You'll find a template one in `backend/.env.sample`_
+---
 
-### Available Commands
+## Install ⚙️
 
-- `setup` : Initialization of frontend and backend, as well as all toolings
-- `migrate` : Run the database migration script
-- `dev` : Starts both servers (frontend + backend) in one terminal
-- `dev-front` : Starts the React frontend server
-- `dev-back` : Starts the Express backend server
-- `lint` : Runs validation tools, and refuses unclean code (will be executed on every _commit_)
-- `fix` : Fixes linter errors (run it if `lint` growls on your code !)
+### Liste des commandes et signification
 
-## FAQ
+- `setup` : Initialisation du frontend et du backend ainsi que des outils
+- `dev` : Démarrage des deux serveurs (frontend + backend) dans un même terminal
+- `dev-front` : Démarrage d'un serveur React pour le frontend
+- `dev-back` : Démarrage d'un serveur Express pour le backend
+- `lint` : Exécute des outils de validation de code (sera exécutée automatiquement à chaque _commit_)
+- `fix` : Fixe les erreurs de formatage (à lancer si `lint` ne passe pas)
 
-### Tools
+### Listing des outils utilisés
 
-- _Concurrently_ : Allows for several commands to run concurrently in the same CLI
-- _Husky_ : Allows to execute specific commands that trigger on _git_ events
-- _Vite_ : Alternative to _Create-React-App_, packaging less tools for a more fluid experience
-- _ESLint_ : "Quality of code" tool, ensures chosen rules will be enforced
-- _Prettier_ : "Quality of code" tool as well, focuses on the styleguide
-- _ Airbnb Standard_ : One of the most known "standards", even though it's not officially linked to ES/JS
-- _Nodemon_ : Allows to restart the server everytime a .js file is udated
+- _Concurrently_ : Permet d'exécuter plusieurs commandes dans un même terminal
+- _Husky_ : Permet d'exécuter des actions en déclenchement de commandes _git_
+- _Vite_ : Alternative à _Create-React-App_, embarquant moins de packages pour une expérience plus fluide
+- _ESLint_ : Outil de "qualité de code", permet de s'assurer que des règles pré-configurées sont bien respectées
+- _Prettier_ : Outil de "qualité de code" également, se concentre plus particulièrement sur le style du code
+- _Standard Airbnb_ : L'un des "standards" les plus connus, même s'il n'est pas officiellement lié à ES/JS
+- _Nodemon_ : Outil permettant de relancer un serveur à chaque fois qu'un des fichiers est modifié
+
+---
+
+## Author 👤
+
+**Anthony Gorski**
+[![Twitter: Gorski_Anthony](https://img.shields.io/twitter/follow/Gorski_Anthony.svg?style=social)](https://twitter.com/Gorski_anthony)
+[![Github](https://img.shields.io/github/followers/GorskiAnthony?style=social)](https://github.com/GorskiAnthony)
+
+- Website: [agorski.fr](https://www.agorski.fr)
+- Twitter: [@anthony](https://twitter.com/Gorski_Anthony)
+- Github: [@anthony](https://github.com/GorskiAnthony)
+- LinkedIn: [@anthony](https://linkedin.com/in/anthony-gorski)

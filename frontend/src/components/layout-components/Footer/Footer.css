@@ -1,0 +1,39 @@
+footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #202020;
+  border-top: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+@media screen and (max-width: 391px) {
+  footer {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+#copyrigth {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.container-social {
+  display: flex;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  min-width: 2rem;
+  min-height: 2rem;
+  margin: 0.5rem;
+}

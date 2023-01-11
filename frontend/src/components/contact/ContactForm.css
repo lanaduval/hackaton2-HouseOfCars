@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 1em;
+  margin-bottom: 10rem;
+}
+
+.input_contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h1 {
+  color: black;
+  font-family: "Lato";
+  font-size: 25px;
+}
+
+#italic {
+  font-style: italic;
+  font-weight: 100;
+}
+
+.container input {
+  font-family: "Lato";
+  width: 16rem;
+  padding: 20px 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1),
+    0 4px 6px 8px rgba(1, 1, 1, 0.05);
+  border: none;
+  font-size: 1em;
+  margin-top: 1rem;
+}
+
+.container textarea {
+  font-family: "Lato";
+  width: 16rem;
+  padding: 60px 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1),
+    0 4px 6px 8px rgba(1, 1, 1, 0.05);
+  border: none;
+  margin-top: 1rem;
+  font-size: 1em;
+}
+
+.buttonSubmit {
+  width: 10em;
+  height: 2.5em;
+  background: #1c1b1b;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1), 2px 2px 2px rgba(1, 1, 1, 0.05);
+  border-radius: 6px;
+  border: none;
+  color: rgb(245, 241, 241);
+  font-size: 1em;
+  margin-top: 2%;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.buttonSubmit:hover {
+  background: #323847;
+}
+
+.buttonSubmit:active {
+  background: #494141;
+}
+
+.contactLottie {
+  width: 7rem;
+  height: 7rem;
+}
+
+.logo_home {
+  margin-top: 2rem;
+}
+
+.logo_home:hover {
+  background: #494141;
+}

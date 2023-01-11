@@ -1,0 +1,21 @@
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 10rem;
+margin-right: 10rem;
+}
+
+.container .titre {
+  color: #b3c559;
+}
+
+.container .img {
+  width: 50%;
+}
+
+.container .content {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  padding: 1em;
+}

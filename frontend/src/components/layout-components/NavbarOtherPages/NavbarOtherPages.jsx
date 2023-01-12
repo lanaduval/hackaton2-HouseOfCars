@@ -18,7 +18,9 @@ export default function NavbarOtherPages() {
             Contact
           </Link>
         </Menu>
-        <img className="logo" src={logo} alt="Logo" />
+        <Link to="/" className="menu-item">
+          <img className="logo" src={logo} alt="Logo" />
+        </Link>
       </header>
     </div>
   );

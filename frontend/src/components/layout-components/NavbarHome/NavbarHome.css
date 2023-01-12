@@ -7,6 +7,10 @@
   margin-bottom: 1rem;
 }
 
+#outer-container .menu-item {
+  margin-bottom: 2rem;
+}
+
 /*Link hover*/
 .bm-item:hover {
   color: #f58a07;
@@ -42,7 +46,7 @@
   background: rgb(11, 14, 32);
   padding: 2.5em 1.5em 0;
   font-family: "Sora";
-  font-size: 1.15em;
+  font-size: 1.5rem;
 }
 
 /* Styling of overlay */
@@ -61,6 +65,10 @@
   align-items: center;
   height: inherit;
   border-bottom: 1px solid #eff0d1;
+}
+
+.header a {
+  margin: 0;
 }
 
 .logo {

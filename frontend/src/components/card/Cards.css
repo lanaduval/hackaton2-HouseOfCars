@@ -7,6 +7,7 @@
   border-radius: 1rem;
   background-color: #6c85d6;
   /* width: 100%; */
+
 }
 
 .PictureVehicle {
@@ -23,13 +24,63 @@
   margin: 2%;
 }
 
-.LabelVehicle input {
-  margin: 2%;
-}
+
+.LabelVehicle input{
+    margin: 2%;
+    outline: none;
+    border-radius: 0.5rem;
+    border-top: 0;
+    border-left: 0;
 
 .TextAnnounce {
   max-width: 50%;
   max-height: 10%;
+}
+
+.AddNewButton{
+    margin: 1%;
+    margin-bottom: 5%;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    width: 60%; 
+    margin-left: 16%;
+    cursor: pointer;
+}
+
+.DeleteButton{
+    display: flex;
+    justify-content:center;
+    margin: 2%;
+    border-radius: 0.5rem;
+    max-width: 30%;
+    cursor: pointer;
+}
+
+.AddPicture{
+    display: flex;
+    justify-content:center;
+    margin: 2%;
+    margin-top: 40%;
+    border-radius: 0.5rem;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.SubmitButton{
+    display: flex;
+    justify-content:center;
+    margin: 1%;
+    border-radius: 0.5rem;
+    max-width: 100%;  
+    cursor: pointer;
+}
+
+@media screen and (min-width: 970px) {
+
+.ContainerFormVehicle{
+    border-radius: 1rem;
 }
 
 .AddNewButton {
@@ -55,9 +106,8 @@
     margin: 1%;
   }
 
-  .DeleteButton {
     margin: 2%;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     width: 5%;
   }
   .AddNewButton {

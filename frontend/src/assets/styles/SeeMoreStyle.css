@@ -1,5 +1,10 @@
+.seemorepage {
+  min-height: 100%;
+}
+
 .seemoretotal {
   display: flex;
+  flex: 1;
   justify-content: space-evenly;
   background-color: #dcdcdd;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

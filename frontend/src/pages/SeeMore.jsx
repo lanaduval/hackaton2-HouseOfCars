@@ -21,7 +21,7 @@ export default function SeeMore() {
   }, []);
 
   return (
-    <>
+    <div className="seemorepage">
       <NavbarOtherPages />
 
       <div className="seemoretotal">
@@ -43,6 +43,6 @@ export default function SeeMore() {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 }

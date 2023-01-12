@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import instance from "../helpers/axios";
-import { Link, useParams } from "react-router-dom";
 import "../assets/styles/CarReservationForm.css";
-import Navbar from "@components/layout-components/Navbar/Navbar";
-import Footer from "@components/layout-components/Footer/Footer";
+import NavbarOtherPages from "../components/layout-components/NavbarOtherPages/NavbarOtherPages";
+import Footer from "../components/layout-components/Footer/Footer";
 
 function CarReservationForm() {
 //   const [cars, setCars] = useState([]);
@@ -35,7 +35,7 @@ function CarReservationForm() {
 
   return (
     <>
-      <Navbar />
+      <NavbarOtherPages />
       <div className="BodyForm">
         <div className="CarDescription">
           <p className="CarTitle">Car description:</p>

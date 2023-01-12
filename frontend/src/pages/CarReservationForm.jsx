@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ToastContainer, toast } from "react-toastify";
 import {
-  faCheckSquare,
   faCar,
   faUsers,
   faLocationArrow,
@@ -29,6 +29,7 @@ function CarReservationForm() {
       .then(
         (result) => {
           console.warn(result.text);
+          toast.dark(" Message Sent ! ✅ ");
         },
         (error) => {
           console.warn(error.text);
@@ -55,59 +56,61 @@ function CarReservationForm() {
   return (
     <>
       <NavbarOtherPages />
-      <div className="BodyForm">
+      <ToastContainer
+        theme="dark"
+        autoClose={2000}
+        position="bottom-center"
+        className="toast-container"
+        toastClassName="dark-toast"
+      />
+      <div className="ResaCards">
         <div className="CarDescription">
-          <h1 className="CarTitle"> Car Description </h1>
+          <h1> Car Description </h1>
           <img src={cars.img} alt="car on the road" />
-          <FontAwesomeIcon
-            className="fab fa-react fa-2x"
-            style={{
-              color: "#F58A07",
-              marginInline: "1rem",
-              paddingBlock: "1rem",
-            }}
-            icon={faCar}
-          />
-          <p> Make: {cars.make} </p>
-          <p>Model: {cars.model}</p>
+          <p>
+            <FontAwesomeIcon
+              className="fab fa-react"
+              style={{
+                color: "#F58A07",
+                marginInline: "1rem",
+                paddingBlock: "1rem",
+              }}
+              icon={faCar}
+            />
+
+            <FontAwesomeIcon
+              className="fab fa-react"
+              style={{
+                color: "#F58A07",
+                marginInline: "1rem",
+                paddingBlock: "1rem",
+              }}
+              icon={faLocationArrow}
+            />
+            <FontAwesomeIcon
+              className="fab fa-react"
+              style={{
+                color: "#F58A07",
+                marginInline: "1rem",
+                paddingBlock: "1rem",
+              }}
+              icon={faUsers}
+            />
+          </p>
+          <p>
+            {" "}
+            {cars.make} {cars.model}, {cars.year}
+          </p>
           <p>Autonomy: {cars.autonomy}</p>
-          <p>Miles: {cars.miles}</p>
-          <p>Year: {cars.year}</p>
-          <p>Type: {cars.type}</p>
-          <FontAwesomeIcon
-            className="fab fa-react fa-2x"
-            style={{
-              color: "#FFF",
-              marginInline: "1rem",
-              paddingBlock: "1rem",
-            }}
-            icon={faUsers}
-          />
-          <p>Seats: {cars.seats}</p>
-          <FontAwesomeIcon
-            className="fab fa-react fa-2x"
-            style={{
-              color: "#FFF",
-              marginInline: "1rem",
-              paddingBlock: "1rem",
-            }}
-            icon={faLocationArrow}
-          />
-          <p>City: {cars.city}</p>
+          <p>
+            Type: {cars.type}, {cars.seats} seats
+          </p>
+          <p>Pick-up: {cars.city}</p>
         </div>
 
-        <h2> Ready ? </h2>
-        <h2> Thanks to fill up the form to book it !</h2>
-        <FontAwesomeIcon
-          className="fab fa-react fa-2x"
-          style={{
-            color: "#FFF",
-            marginInline: "1rem",
-            paddingBlock: "1rem",
-          }}
-          icon={faCheckSquare}
-        />
-        <form className="FormResa" ref={form} onSubmit={sendEmail}>
+        <form className="CarDescription" ref={form} onSubmit={sendEmail}>
+          <h2> Ready ? </h2>
+          <h2> Please, fill up the form to book it !</h2>
           <input type="hidden" name="make" value={cars.make} />
           <input type="hidden" name="model" value={cars.model} />
           <input type="hidden" name="city" value={cars.city} />
@@ -147,14 +150,12 @@ function CarReservationForm() {
               onChange={(e) => setEndDate(e.target.value)}
             />
           </label>
-          <div className="SubmitResa">
-            <button className="SubmitResa" type="submit">
-              Submit
-            </button>
-          </div>
+          <button id="submitResa" type="submit">
+            Submit
+          </button>
         </form>
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }

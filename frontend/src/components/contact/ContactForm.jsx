@@ -25,12 +25,12 @@ function ContactForm() {
   };
 
   return (
-    <div className="container">
+    <div className="containerContactForm">
       <Player autoplay loop src={mail} className="contactLottie" />
       <form onSubmit={notif}>
         <div className="input_contact">
           <h1>
-            CONTACT <span id="italic">US</span>
+            Contact <span id="italic">US</span>
           </h1>
         </div>
         <div>

@@ -1,3 +1,15 @@
+
+.CarDescription{
+    display: flex;
+    flex-direction: column;
+    margin:3rem;
+    padding: 3rem;
+    background-color:#0b0e204d;
+    border-radius: 1rem;
+    font-family: 'Sora';
+    font-size: 1.2rem;
+    color: #EFF0D1;
+    width: 40%;   
 .BodyForm {
   display: flex;
   flex-direction: column;
@@ -46,22 +58,57 @@
   margin: 1%;
 }
 
-.InputResa {
-  margin: 3%;
-  outline: none;
-  border-radius: 0.5rem;
-  border-top: 0;
-  border-left: 0;
+.ResaCards {
+display: flex;
+flex-direction: row-reverse;
+margin-bottom: 3rem;
 }
-
-.SubmitResa {
+#submitResa {
   display: flex;
   flex-direction: column-reverse;
   border-radius: 0.5rem;
-  margin: 1%;
   cursor: pointer;
+  background:#F58A07;
+  border: none;
+    height: 2rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    font-family: 'Sora';
+    font-size: 1.2rem;
+    color:#262730;
+width: 40%;
+align-self: center;
+    align-items: center;
+}
+.CarDescription input, button{
+    border: none;
+    height: 2rem;
+    background:#EFF0D1 ;
+    border-radius: 1rem;
+    margin: 1rem;
+    width: 100%;
+}
+.LabelResa {
+    color:#eff0d192;
 }
 
+@media screen and (max-width: 391px){
+    .ResaCards {
+        display: flex;
+        margin-bottom: 3rem;
+        flex-direction: column-reverse;
+        }
+    .CarDescription{
+        display: flex;
+        
+        padding: 2rem;
+        background-color:#0b0e204d;
+        border-radius: 1rem;
+        font-family: 'Sora';
+        font-size: 1.2rem;
+        color: #EFF0D1;
+        width: 60%;
+    }  
 @media screen and (min-width: 391px) {
   .FormResa {
     margin: 1%;

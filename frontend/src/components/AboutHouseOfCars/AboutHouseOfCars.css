@@ -1,21 +1,45 @@
-.container {
+.container_about {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  gap: 2rem;
+  margin: 5rem 10rem;
 }
 
-.container .titre {
-  color: #b3c559;
+.img_about {
+  width: 30rem;
+  border-radius: 5px;
+  box-shadow: #121217 0px 3px 8px;
 }
 
-.container .img {
-  width: 50%;
+.titre_about {
+  font-family: "Sora";
+  color: #eff0d1;
+  margin-top: 0;
 }
-
-.container .content {
-  font-size: 1.2em;
+.content_about {
+  font-size: 1rem;
+  font-family: "Sora";
   line-height: 1.5em;
-  padding: 1em;
+  color: #eff0d1;
+}
+
+@media screen and (max-width: 391px) {
+  .container_about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .img_about {
+    width: 22rem;
+    border-radius: 5px;
+    box-shadow: #121217 0px 3px 8px;
+    margin-top: -2rem;
+  }
+
+  .titre_about {
+    width: 22rem;
+  }
 }

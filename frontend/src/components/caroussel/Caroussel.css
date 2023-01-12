@@ -1,6 +1,7 @@
 .slider-container {
   display: flex;
   justify-content: center;
+  margin: 0 0 5rem 0;
   gap: 1rem;
 }
 
@@ -22,27 +23,32 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  background-color: #dcdcdd;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  gap: 2rem;
+  background-color: rgb(11, 14, 32, 0.3);
+  box-shadow: #121217 0px 3px 8px;
   padding: 0.8rem;
   border-radius: 5px;
 }
 
 .make-car {
+  font-family: "Sora";
   font-size: 2rem;
+  color: #eff0d1;
   margin: 0;
 }
 
 .model-car {
+  font-family: "Sora";
   font-size: 1.5rem;
+  color: #eff0d1;
+
   margin: 0;
 }
 
@@ -50,20 +56,21 @@
   width: 8rem;
   height: 2rem;
   border-radius: 3px;
-  background-color: #bf3e9f;
+  background-color: #f58a07;
   border: none;
+  box-shadow: #111114 0px 3px 8px;
+  font-family: "Sora";
   font-size: 1rem;
   cursor: pointer;
-  color: #fff;
+  color: #262730;
 }
 
 .button-show:hover {
-  background-color: #bf3e9f;
-  color: #0b0e20;
+  color: #eff0d1;
 }
 
 .button-show:active {
-  background-color: #bf3e9f;
+  background-color: #EFF0D1;
   color: rgb(77, 79, 81);
 }
 

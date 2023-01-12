@@ -6,7 +6,7 @@ import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
-import CarReservationForm from "./pages/Reservation";
+import CarReservationForm from "./pages/CarReservationForm";
 import PaymentPage from "/src/components/paiement/PaiementForm";
 import "./App.css";
 

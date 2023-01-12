@@ -1,19 +1,15 @@
-/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
-@import url(https://fonts.googleapis.com/css?family=Audiowide:regular); */
-
 /*Link style*/
 .bm-item {
   display: inline-block;
   text-decoration: none;
-  margin-bottom: 10px;
-  color: #d1d1d1;
+  color: #eff0d1;
   transition: color 0.2s;
-  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 /*Link hover*/
 .bm-item:hover {
-  color: #bf3e9f;
+  color: #f58a07;
 }
 
 /*Button menu burger*/
@@ -27,7 +23,7 @@
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #bf3e9f;
+  background: #f58a07;
 }
 
 /* Position and sizing of clickable cross button */
@@ -38,29 +34,34 @@
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bf3e9f;
+  background: #f58a07;
 }
 
 /* General sidebar styles */
 .bm-menu {
-  background: #0b0e20;
+  background: rgb(11, 14, 32);
   padding: 2.5em 1.5em 0;
+  font-family: "Sora";
   font-size: 1.15em;
 }
 
 /* Styling of overlay */
 .bm-overlay {
-  background: #0b0e20;
+  background: #262730;
 }
 
 #outer-container {
   height: 6.5rem;
-  background-color: #0b0e20;
+  background-color: rgb(11, 14, 32, 0.3);
 }
 
 .logo {
   width: 200px;
   margin: auto;
+}
+
+.header {
+  border-bottom: 1px solid #eff0d1;
 }
 
 @media screen and (max-width: 391px) {

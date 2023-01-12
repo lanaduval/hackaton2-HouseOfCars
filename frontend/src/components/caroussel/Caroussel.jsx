@@ -54,6 +54,10 @@ function Caroussel() {
     currentPage * itemsPerPage + itemsPerPage
   );
 
+  const showPrevious = currentPage !== 0;
+  const showNext =
+    currentPage < Math.ceil(filterCars.length / itemsPerPage) - 1;
+
   return (
     <>
       <div className="filtre_subnav">
@@ -92,7 +96,9 @@ function Caroussel() {
           type="button"
           className="button-previous"
           onClick={handlePrevious}
-          disabled={currentPage === 0}
+          disabled={!showPrevious}
+          // disabled={currentPage === 0}
+          style={{ display: showPrevious ? "block" : "none" }}
         >
           <img className="arrow" src={arrowLeft} alt="Arrow" />
         </button>
@@ -123,7 +129,9 @@ function Caroussel() {
           type="button"
           className="button-next"
           onClick={handleNext}
-          disabled={currentPage === Math.ceil(cars.length / itemsPerPage) - 1}
+          disabled={!showNext}
+          // disabled={currentPage === Math.ceil(cars.length / itemsPerPage) - 1}
+          style={{ display: showNext ? "block" : "none" }}
         >
           <img className="arrow" src={arrowRight} alt="Arrow" />
         </button>

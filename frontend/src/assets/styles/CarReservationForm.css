@@ -1,47 +1,45 @@
-.BodyForm{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-background-color:#262730;
+.BodyForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #262730;
 }
-.CarDescription{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 3rem;
-    padding: 2%;
-    background-color:rgb(11,14,32, 0.3);
-    border-radius: 1rem;
-    width: 50%;
-    font-family: 'Sora';
-    font-size: 1.2rem;
-    color: #EFF0D1;
-
-   
+.CarDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3rem;
+  padding: 2%;
+  background-color: rgb(11, 14, 32, 0.3);
+  border-radius: 1rem;
+  width: 50%;
+  font-family: "Sora";
+  font-size: 1.2rem;
+  color: #eff0d1;
 }
 .BodyForm h2 {
-    font-family: 'Sora';
-    margin-bottom: 2rem;
-    color:#F58A07;
+  font-family: "Sora";
+  margin-bottom: 2rem;
+  color: #f58a07;
 }
 
-.CarTitle{
-    font-size: larger;
-    font-weight: bold;
-    font-family: 'Sora';
+.CarTitle {
+  font-size: larger;
+  font-weight: bold;
+  font-family: "Sora";
 }
 
-.FormResa{
-    margin: 1%;
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(11,14,32, 0.3);
-    border-radius: 1rem;
-    width: 50%;
-    font-family: 'Sora';
-    margin-bottom: 2rem;;
+.FormResa {
+  margin: 1%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(11, 14, 32, 0.3);
+  border-radius: 1rem;
+  width: 50%;
+  font-family: "Sora";
+  margin-bottom: 2rem;
 }
 
 .LabelResa {
@@ -64,17 +62,15 @@ background-color:#262730;
   cursor: pointer;
 }
 
-
-@media screen and (min-width: 391px){
-    .FormResa{
-        margin: 1%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background-color: #6c85d6;
-        border-radius: 1rem;
-        width: 50%;
-    }    
+@media screen and (min-width: 391px) {
+  .FormResa {
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #6c85d6;
+    border-radius: 1rem;
+    width: 50%;
+  }
 }
-

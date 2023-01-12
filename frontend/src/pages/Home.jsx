@@ -11,7 +11,6 @@ export default function Home() {
       <FiltreBar />
       <Caroussel />
       <Footer />
-      <TestBack />
     </>
   );
 }

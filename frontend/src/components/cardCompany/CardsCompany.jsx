@@ -112,6 +112,7 @@ function CardsCompany() {
               onChange={handleChangeSubmit}
               required
             />
+            
             Available:{" "}
             <fieldset>
               <input
@@ -129,7 +130,7 @@ function CardsCompany() {
               />
               <label htmlFor="type">not available</label>
             </fieldset>
-            <fieldset>
+            <fieldset >
               <input
                 type="radio"
                 id="casual"
@@ -138,8 +139,8 @@ function CardsCompany() {
                 value="casual"
                 onChange={handleChangeSubmit}
               />
-              <label htmlFor="type">Casual</label>
-              <input
+              <label  htmlFor="type">Casual</label>
+              <input 
                 type="radio"
                 id="confort"
                 name="type"
@@ -147,24 +148,29 @@ function CardsCompany() {
                 value="confort"
                 onChange={handleChangeSubmit}
               />
-              <label htmlFor="administrateur"> Confort</label>
+              <label htmlFor="administrateur"> Comfort</label>
             </fieldset>
-            <button type="submit" className="SubmitButton">
+          </form>
+          <div className="ButtonForm" >
+            <button 
+            type="submit" 
+            className="SubmitButton">
               Submit
             </button>
-          </form>
           <button
             type="button"
             className="DeleteButton"
-            onClick={() => handleDeleteCard(card.id)}
-          >
+            onClick={() => handleDeleteCard(card.id)}>
             Delete
           </button>
         </div>
-      ))}
-       <div className='AddNewButton'>
-        <button className='AddNewButton' onClick={handleAddCard}>Add New Vehicle</button>
         </div>
+      ))}
+      <div className="ButtonAdd">
+        <button className="AddNewVehicle" onClick={handleAddCard}>
+          Add New Vehicle
+        </button>
+      </div>
     </div>
   );
 }

@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "./Cards.css";
 import ImageCard from '@components/ImageCard';
 import instance  from '../../helpers/axios';
 
-
-
 function Card() {
-    const [cards, setCards] = useState([{ id: 1, image:null }]);
-    
+  const [cards, setCards] = useState([{ id: 1, image: null }]);
+
+  const [isEditing, setIsEditing] = useState(false);
+  const [currentEditingCard, setCurrentEditingCard] = useState(null);
+
     
     const handleAddCard = () => {
         const newCard = { id: cards.length + 1, image:null };
@@ -61,12 +62,8 @@ function Card() {
                 <button type='submit' className='SubmitButton'>Submit</button>
           </div>
         ))}
-        <div className='AddNewButton'>
-        <button className='AddNewButton' onClick={handleAddCard}>Add New Vehicle</button>
-        </div>
-      </div>
-    );
   };
 
-
   export default Card;
+
+

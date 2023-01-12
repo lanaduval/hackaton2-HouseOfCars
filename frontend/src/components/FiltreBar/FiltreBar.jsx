@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // import { Calendar } from "react-calendar";
 import "./FiltreBar.css";
 
-function FiltreBar() {
+function FilterBar() {
   const [category, setCategory] = useState(null);
   const [location, setLocation] = useState(null);
   //   const [date, setDate] = useState(null);
@@ -39,4 +39,4 @@ function FiltreBar() {
   );
 }
 
-export default FiltreBar;
+export default FilterBar;

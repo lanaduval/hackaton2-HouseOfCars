@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import CompanyPage from "@pages/CompanyPage";
 import Home from "./pages/Home";
 import SeeMore from "./pages/SeeMore";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
-import CompanyPage from "@pages/CompanyPage";
 
 import "./App.css";
 
@@ -14,7 +14,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/seemore" element={<SeeMore />} />
+        <Route path="/cars/:id" element={<SeeMore />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />

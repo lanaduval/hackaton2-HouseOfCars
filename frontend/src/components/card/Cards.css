@@ -1,24 +1,29 @@
-.ContainerFormVehicle{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5%;
-    background-color: #6C85D6 ;
+.ContainerFormVehicle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+  border: solid 1px;
+  border-radius: 1rem;
+  background-color: #6c85d6;
+  /* width: 100%; */
+
 }
 
-.PictureVehicle{
-    margin: 2%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.PictureVehicle {
+  margin: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.LabelVehicle{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    margin: 2%;
+.LabelVehicle {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin: 2%;
 }
+
 
 .LabelVehicle input{
     margin: 2%;
@@ -27,11 +32,9 @@
     border-top: 0;
     border-left: 0;
 
-}
-
-.TextAnnounce{
-    max-width: 50%;
-    max-height: 10%;
+.TextAnnounce {
+  max-width: 50%;
+  max-height: 10%;
 }
 
 .AddNewButton{
@@ -79,13 +82,36 @@
 .ContainerFormVehicle{
     border-radius: 1rem;
 }
-.DeleteButton{
+
+.AddNewButton {
+  margin: 1%;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 60%;
+  margin-left: 16%;
+}
+
+.DeleteButton {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+  border-radius: 1rem;
+  width: 30%;
+}
+
+@media screen and (min-width: 970px) {
+  .ContainerFormVehicle {
+    margin: 1%;
+  }
+
     margin: 2%;
     border-radius: 0.5rem;
     width: 5%;
-    }
-.AddNewButton{
+  }
+  .AddNewButton {
     width: 29%;
     margin-left: 31%;
-}
+  }
 }

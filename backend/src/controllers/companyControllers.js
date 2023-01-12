@@ -1,4 +1,5 @@
 const { verify, hash, argon2id } = require("argon2");
+const { generateToken } = require("../services/jwt");
 const models = require("../models");
 
 const browse = (req, res) => {
@@ -53,7 +54,7 @@ const put = (req, res) => {
     });
 };
 
-const login = async (req, res) => {
+const login = (req, res) => {
   const { email, password } = req.body;
 
   models.company

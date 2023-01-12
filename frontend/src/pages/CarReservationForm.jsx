@@ -14,7 +14,6 @@ import NavbarOtherPages from "../components/layout-components/NavbarOtherPages/N
 import Footer from "../components/layout-components/Footer/Footer";
 
 function CarReservationForm() {
-
   // gère l'envoi mail
   const form = useRef();
   const sendEmail = (e) => {
@@ -29,18 +28,13 @@ function CarReservationForm() {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          console.warn(result.text);
         },
         (error) => {
-          console.log(error.text);
+          console.warn(error.text);
         }
       );
   };
-
-  //   const [cars, setCars] = useState([]);
-
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
 
@@ -58,11 +52,6 @@ function CarReservationForm() {
       });
   }, []);
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setLoading(true);
-  };
-
   return (
     <>
       <NavbarOtherPages />
@@ -73,7 +62,7 @@ function CarReservationForm() {
           <FontAwesomeIcon
             className="fab fa-react fa-2x"
             style={{
-              color: "#FFF",
+              color: "#F58A07",
               marginInline: "1rem",
               paddingBlock: "1rem",
             }}
@@ -159,11 +148,10 @@ function CarReservationForm() {
             />
           </label>
           <div className="SubmitResa">
-            <button className="SubmitResa" type="submit" disabled={loading}>
-              {loading ? "Loading..." : "Submit"}
+            <button className="SubmitResa" type="submit">
+              Submit
             </button>
           </div>
-          {error && <p>{error}</p>}
         </form>
         <Footer />
       </div>

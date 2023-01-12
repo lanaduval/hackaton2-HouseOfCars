@@ -58,6 +58,7 @@
 .logo {
   width: 200px;
   margin: auto;
+  align-content: center;
 }
 
 .header {

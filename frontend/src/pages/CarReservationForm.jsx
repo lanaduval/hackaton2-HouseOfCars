@@ -97,20 +97,24 @@ function CarReservationForm() {
               icon={faUsers}
             />
           </p>
-          <p>
+          <p className="paragraphe">
             {" "}
             {cars.make} {cars.model}, {cars.year}
           </p>
-          <p>Autonomy: {cars.autonomy}</p>
-          <p>
-            Type: {cars.type}, {cars.seats} seats
+          <p className="paragraphe">Autonomy : {cars.autonomy}</p>
+          <p className="paragraphe">
+            Type : {cars.type}, {cars.seats} seats
           </p>
-          <p>Pick-up: {cars.city}</p>
+          <p className="paragraphe">Pick-up : {cars.city}</p>
         </div>
 
         <form className="CarDescription" ref={form} onSubmit={sendEmail}>
           <h2> Ready ? </h2>
-          <h2> Please, fill up the form to book it !</h2>
+          <h2>
+            {" "}
+            Please, fill up the form <br />
+            to book it !
+          </h2>
           <input type="hidden" name="make" value={cars.make} />
           <input type="hidden" name="model" value={cars.model} />
           <input type="hidden" name="city" value={cars.city} />

@@ -3,7 +3,6 @@ cards : rgb(11,14,32, 0.3);
 orange : #F58A07;
 blanc beige : #EFF0D1; */
 
-
 .ContainerFormVehicle {
   display: flex;
   flex-direction: column;
@@ -14,9 +13,9 @@ blanc beige : #EFF0D1; */
   margin-bottom: 1%;
   border: none;
   border-radius: 1rem;
-  background-color: rgb(11,14,32, 0.3);
-  color:#EFF0D1;
-  font-family: 'Sora';
+  background-color: rgb(11, 14, 32, 0.3);
+  color: #eff0d1;
+  font-family: "Sora";
 }
 
 .LabelVehicle {
@@ -25,7 +24,7 @@ blanc beige : #EFF0D1; */
   align-items: baseline;
   margin: 2%;
   font-size: larger;
-  color:#eff0d192;
+  color: #eff0d192;
 }
 
 .LabelVehicle input {
@@ -34,7 +33,7 @@ blanc beige : #EFF0D1; */
   border-radius: 0.2rem;
   border-top: 0;
   border-left: 0;
-  background:#EFF0D1 ;
+  background: #eff0d1;
 }
 
 fieldset {
@@ -46,12 +45,11 @@ fieldset {
   border: none;
 }
 
-.ButtonAdd{
+.ButtonAdd {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
 }
 
 .AddNewVehicle {
@@ -61,30 +59,28 @@ fieldset {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background-color: #F58A07;
-  color:#262730;
+  background-color: #f58a07;
+  color: #262730;
   border: none;
   padding: 0.5rem;
   width: 40%;
   font-size: larger;
-  font-family: 'Sora';
-  
+  font-family: "Sora";
 }
 
 .SubmitButton {
   margin: 5%;
   border-radius: 0.2rem;
-  background-color: #F58A07;
+  background-color: #f58a07;
   color: #262730;
-  border:none;
+  border: none;
   cursor: pointer;
-
 }
 
 .DeleteButton {
   margin: 5%;
   border-radius: 0.2rem;
-  background-color: #F58A07;
+  background-color: #f58a07;
   color: #262730;
   border: none;
   cursor: pointer;
@@ -108,9 +104,9 @@ fieldset {
     margin-right: 25%;
   }
 
-  fieldset{
+  fieldset {
     justify-content: space-evenly;
-    width:80%;
+    width: 80%;
   }
 
   .ButtonAdd {
@@ -126,7 +122,7 @@ fieldset {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width:17%;
+    width: 17%;
   }
 
   .DeleteButton {
@@ -154,7 +150,6 @@ fieldset {
   .DeleteButton {
     width: 20%;
     font-size: larger;
-
   }
 
   .LabelVehicle input {

@@ -18,12 +18,18 @@ export default function NavbarHome() {
             Contact
           </Link>
         </Menu>
-        <img className="logo" src={logo} alt="Logo" />
-        <Link to="/login">
-          <button type="button" className="login_button">
-            Company Space
-          </button>
-        </Link>
+        <div>
+          <Link to="/" className="menu-item-bar">
+            <img className="logo" src={logo} alt="Logo" />
+          </Link>
+        </div>
+        <div>
+          <Link to="/login">
+            <button type="button" className="login_button">
+              Company Space
+            </button>
+          </Link>
+        </div>
       </header>
     </div>
   );

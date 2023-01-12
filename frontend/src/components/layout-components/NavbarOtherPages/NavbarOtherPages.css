@@ -64,6 +64,10 @@
   border-bottom: 1px solid #eff0d1;
 }
 
+.header a {
+  margin: auto;
+}
+
 @media screen and (max-width: 391px) {
   .logo {
     width: 120px;

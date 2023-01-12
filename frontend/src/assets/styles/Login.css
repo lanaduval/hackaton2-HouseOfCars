@@ -6,10 +6,10 @@
   padding: 2rem;
   margin: 5%;
   margin-top: 8rem;
-  background-color: #6c85d6;
+  background-color: rgb(11,14,32, 0.3);
   border: none;
   border-radius: 1rem;
-  box-shadow: #bf3e9f -2px -2px 20px 1px;
+  box-shadow:  #F58A07 -2px -2px 10px 0.5px;
 }
 
 .loginForm {
@@ -27,7 +27,9 @@
   outline: none;
   border-top: 0;
   border-left: 0;
-  color: #361a55;
+  text-decoration: #262730;
+  color:  #262730;
+  font-family: 'Sora';
 }
 
 .password {
@@ -37,20 +39,25 @@
   outline: none;
   border-top: 0;
   border-left: 0;
-  color: #361a55;
+  text-decoration: #262730;
+  color: #262730;
+  font-family: 'Sora';
 }
 
 .SubmitLogin {
   border-radius: 0.3rem;
   padding: 0.2rem;
   border: none;
-  background-color: #bf3e9f;
+  background-color:  #F58A07;
   color: white;
   cursor: pointer;
+  font-family: 'Sora';
+  font-size: larger;
 }
 
 :hover.SubmitLogin {
-  background: #361a55;
+  border: 1px solid  #F58A07;
+  background:transparent;
   color: white;
   transition: 0.4;
 }

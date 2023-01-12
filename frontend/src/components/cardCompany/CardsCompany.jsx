@@ -47,18 +47,19 @@ function CardsCompany() {
         <div className="ContainerFormVehicle" key={card.id}>
           {card.content}
           <form className="LabelVehicle" htmlFor="Card" onSubmit={handleSubmit}>
+          <h1>Add a new car</h1>
             Picture:{" "}
             <input
               name="img"
               type="url"
-              placeholder="URL"
+              placeholder="URL..."
               onChange={handleChange}
               required
             />
             Make:{" "}
             <input
               name="make"
-              placeholder="Make"
+              placeholder="Make..."
               type="text"
               onChange={handleChange}
               required
@@ -68,7 +69,7 @@ function CardsCompany() {
             Autonomy:{" "}
             <input
               name="autonomy"
-              placeholder="Mileage without spaces"
+              placeholder="Mileage without spaces..."
               type="text"
               onChange={handleChange}
               required
@@ -76,7 +77,7 @@ function CardsCompany() {
             City:{" "}
             <input
               name="city"
-              placeholder="City"
+              placeholder="City..."
               type="text"
               onChange={handleChange}
               required
@@ -86,7 +87,7 @@ function CardsCompany() {
             Year:{" "}
             <input name="year" type="text" onChange={handleChange} required />
             Seats:{" "}
-            <input name="seats" type="text" onChange={handleChange} required />
+            <input name="seats" type="text" onChange={handleChange} required /><br/>
             Available:{" "}
             <fieldset>
               <input
@@ -95,14 +96,14 @@ function CardsCompany() {
                 value="0"
                 onChange={handleChange}
               />
-              <label htmlFor="type">available</label>
+              <label htmlFor="type">Available</label>
               <input
                 name="available"
                 type="radio"
                 value="1"
                 onChange={handleChange}
               />
-              <label htmlFor="type">not available</label>
+              <label htmlFor="type">Unavailable</label>
             </fieldset>
             <fieldset>
               <input

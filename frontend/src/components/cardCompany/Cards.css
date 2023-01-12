@@ -1,19 +1,22 @@
+/* fond: #262730;
+cards : rgb(11,14,32, 0.3);
+orange : #F58A07;
+blanc beige : #EFF0D1; */
+
+
 .ContainerFormVehicle {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2%;
-  border: solid 1px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  border: none;
   border-radius: 1rem;
-  background-color: #6c85d6;
-  /* width: 100%; */
-}
-
-.PictureVehicle {
-  margin: 2%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  background-color: rgb(11,14,32, 0.3);
+  color:#EFF0D1;
+  font-family: 'Sora';
 }
 
 .LabelVehicle {
@@ -22,67 +25,69 @@
   align-items: baseline;
   margin: 2%;
   font-size: larger;
+  color:#eff0d192;
 }
 
 .LabelVehicle input {
   margin: 2%;
   outline: none;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
   border-top: 0;
   border-left: 0;
+  background:#EFF0D1 ;
 }
 
 fieldset {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: 8%;
   border: none;
 }
 
-.TextAnnounce {
-  max-width: 50%;
-  max-height: 10%;
-}
-
-.AddNewVehicle {
-  margin: 1%;
-  margin-bottom: 15%;
-  border-radius: 0.5rem;
+.ButtonAdd{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 60%;
-  margin-left: 16%;
-  cursor: pointer;
-  background-color: #bf3e9f;
+  align-items: center;
+
 }
 
-.AddPicture {
+.AddNewVehicle {
+  border-radius: 0.2rem;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  margin: 2%;
-  margin-top: 40%;
-  border-radius: 0.5rem;
-  width: 110%;
-  /* max-width: 100%; */
+  align-items: center;
   cursor: pointer;
-  background-color: #bf3e9f;
+  background-color: #F58A07;
+  color:#262730;
+  border: none;
+  padding: 0.5rem;
+  width: 40%;
+  font-size: larger;
+  font-family: 'Sora';
+  
 }
 
 .SubmitButton {
-  margin: 2%;
-  border-radius: 0.5rem;
-  width: 40%;
-  background-color: #bf3e9f;
+  margin: 5%;
+  border-radius: 0.2rem;
+  background-color: #F58A07;
+  color: #262730;
+  border:none;
+  cursor: pointer;
+
 }
 
 .DeleteButton {
-  margin: 2%;
-  border-radius: 0.5rem;
-  width: 40%;
-  background-color: #bf3e9f;
+  margin: 5%;
+  border-radius: 0.2rem;
+  background-color: #F58A07;
+  color: #262730;
+  border: none;
+  cursor: pointer;
 }
 
 .ButtonForm {
@@ -93,13 +98,19 @@ fieldset {
   width: 50%;
   max-width: 100%;
   margin: 2%;
-  cursor: pointer;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
 }
 
 @media screen and (min-width: 391px) {
   .ContainerFormVehicle {
     border-radius: 1rem;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  fieldset{
+    justify-content: space-evenly;
+    width:80%;
   }
 
   .ButtonAdd {
@@ -111,18 +122,18 @@ fieldset {
   .AddNewVehicle {
     margin: 1%;
     margin-bottom: 5%;
-    border-radius: 1rem;
+    border-radius: 0.2rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 7%;
+    width:17%;
   }
 
   .DeleteButton {
     display: flex;
     justify-content: center;
     margin: 2%;
-    border-radius: 1rem;
+    border-radius: 0.2rem;
     width: 5%;
   }
 
@@ -136,11 +147,14 @@ fieldset {
   }
 
   .SubmitButton {
-    width: 10%;
+    width: 20%;
+    font-size: larger;
   }
 
   .DeleteButton {
-    width: 10%;
+    width: 20%;
+    font-size: larger;
+
   }
 
   .LabelVehicle input {

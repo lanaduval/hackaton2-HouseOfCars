@@ -47,7 +47,7 @@ function CardsCompany() {
         <div className="ContainerFormVehicle" key={card.id}>
           {card.content}
           <form className="LabelVehicle" htmlFor="Card" onSubmit={handleSubmit}>
-          <h1>Add a new car</h1>
+            <h1>Add a new car</h1>
             Picture:{" "}
             <input
               name="img"
@@ -87,7 +87,8 @@ function CardsCompany() {
             Year:{" "}
             <input name="year" type="text" onChange={handleChange} required />
             Seats:{" "}
-            <input name="seats" type="text" onChange={handleChange} required /><br/>
+            <input name="seats" type="text" onChange={handleChange} required />
+            <br />
             Available:{" "}
             <fieldset>
               <input

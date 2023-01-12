@@ -14,6 +14,20 @@ footer {
   margin-top: 3%;
 }
 
+.container-team {
+  display: flex;
+  align-items: center;
+}
+
+.container-team a {
+  color: #eff0d1;
+  font-family: "Sora";
+  font-size: 1rem;
+  margin: 0;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 391px) {
   footer {
     position: relative;

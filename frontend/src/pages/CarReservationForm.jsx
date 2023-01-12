@@ -42,6 +42,11 @@ function CarReservationForm() {
           <p>Make: {cars.make}</p>
           <p>Model: {cars.model}</p>
           <p>Autonomy: {cars.autonomy}</p>
+          <p>City: {cars.city}</p>
+          <p>Miles: {cars.miles}</p>
+          <p>Year: {cars.year}</p>
+          <p>Seats: {cars.seats}</p>
+          <p>Type: {cars.type}</p>
         </div>
 
         <form className="FormResa" onSubmit={handleSubmit}>

@@ -1,11 +1,11 @@
-import Navbar from "../components/layout-components/Navbar/Navbar";
+import NavbarHome from "../components/layout-components/NavbarHome/NavbarHome";
 import Footer from "../components/layout-components/Footer/Footer";
 import ContactForm from "../components/contact/ContactForm";
 
 export default function Contact() {
   return (
     <>
-      <Navbar />
+      <NavbarHome />
       <ContactForm />
       <Footer />
     </>

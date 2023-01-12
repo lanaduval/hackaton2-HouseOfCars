@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { stack as Menu } from "react-burger-menu";
 import logo from "../../../assets/logo.png";
-import "./Navbar.css";
+import "./NavbarHome.css";
 
-export default function Navbar() {
+export default function NavbarHome() {
   return (
     <div id="outer-container">
       <header className="header">

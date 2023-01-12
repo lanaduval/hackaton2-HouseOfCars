@@ -45,7 +45,13 @@ function CardsCompany() {
     instance
       .post("/cars", cars)
       .then((res) => console.warn(res.data, notify()))
+
+      .catch((err) =>
+        console.error(err, toast.error("Wrong informations ! ❌"))
+      );
+
       .catch((err) => console.error(err, toast.error("Wrong informations ! ❌")));
+
   };
   return (
     <div>
@@ -152,6 +158,10 @@ function CardsCompany() {
             </button>
           </form>
           <button
+
+            type="button"
+
+
             className="DeleteButton"
             onClick={() => handleDeleteCard(card.id)}
           >

@@ -1,6 +1,6 @@
 const AbstractManager = require("./AbstractManager");
 
-class UsersManager extends AbstractManager {
+class CarsManager extends AbstractManager {
   constructor() {
     super({ table: "cars" });
   }
@@ -25,12 +25,6 @@ class UsersManager extends AbstractManager {
       ]
     );
   }
-
-  find(id) {
-    return this.connection.query(`select * from  ${this.table} where id = ?`, [
-      id,
-    ]);
-  }
 }
 
-module.exports = UsersManager;
+module.exports = CarsManager;

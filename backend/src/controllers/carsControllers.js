@@ -13,10 +13,10 @@ const browse = (req, res) => {
 };
 
 const carsID = (req, res) => {
-  const id = req.params;
+  const { id } = req.params;
   models.cars
     .find(id)
-    .then(([rows]) => {
+    .then(([[rows]]) => {
       res.send(rows);
     })
     .catch((err) => {

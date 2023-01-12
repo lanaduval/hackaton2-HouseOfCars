@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import { Calendar } from "react-calendar";
-import "./FiltreBar.css";
+// import "./FiltreBar.css";
 
 function FilterBar() {
   const [category, setCategory] = useState(null);

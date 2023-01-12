@@ -11,7 +11,7 @@ export default function SeeMore() {
 
   useEffect(() => {
     instance
-      .get("/cars/" + id)
+      .get(`/cars/${id}`)
       .then((result) => {
         setCars(result.data);
       })
@@ -19,8 +19,7 @@ export default function SeeMore() {
         console.error(err);
       });
   }, []);
-  console.log(cars);
-
+  
   return (
     <>
       <Navbar />

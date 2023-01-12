@@ -16,9 +16,9 @@ export default function TestBack() {
 
   return (
     <div>
-      {cars.map((car, index) => (
+      {cars.map((car) => (
         <>
-          <h1 key={index}>{car.model}</h1>
+          <h1>{car.model}</h1>
           <h2>{car.make}</h2>
           <p>{car.year}</p>
           <p>{car.autonomy}</p>

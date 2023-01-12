@@ -1,68 +1,68 @@
-.BodyForm{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.BodyForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.CarDescription{
+.CarDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  padding: 2%;
+  background-color: #6c85d6;
+  border-radius: 1rem;
+  width: 50%;
+}
+
+.CarTitle {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.FormResa {
+  margin: 1%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #6c85d6;
+  border-radius: 1rem;
+  width: 50%;
+}
+
+.LabelResa {
+  margin: 1%;
+}
+
+.InputResa {
+  margin: 3%;
+  outline: none;
+  border-radius: 0.5rem;
+  border-top: 0;
+  border-left: 0;
+}
+
+.SubmitResa {
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 0.5rem;
+  margin: 1%;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 391px) {
+  .FormResa {
+    margin: 1%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 1%;
-    padding: 2%;
     background-color: #6c85d6;
     border-radius: 1rem;
     width: 50%;
-}
-
-.CarTitle{
-    font-size: larger;
-    font-weight: bold;
-}
-
-.FormResa{
-    margin: 1%;
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #6c85d6;
-    border-radius: 1rem;
-    width: 50%;
-}
-
-.LabelResa{
-    margin: 1%;
-}
-
-.InputResa{
-    margin: 3%;
-    outline: none;
-    border-radius: 0.5rem;
-    border-top: 0;
-    border-left: 0;
-}
-
-.SubmitResa{
-    display: flex;
-    flex-direction: column-reverse;
-    border-radius: 0.5rem;
-    margin: 1%;
-    cursor: pointer;
-}
-
-@media screen and (min-width: 391px){
-    .FormResa{
-        margin: 1%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background-color: #6c85d6;
-        border-radius: 1rem;
-        width: 50%;
-    }    
+  }
 }

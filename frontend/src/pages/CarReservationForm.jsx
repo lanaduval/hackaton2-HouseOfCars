@@ -14,6 +14,7 @@ import NavbarOtherPages from "../components/layout-components/NavbarOtherPages/N
 import Footer from "../components/layout-components/Footer/Footer";
 
 function CarReservationForm() {
+
   // gère l'envoi mail
   const form = useRef();
   const sendEmail = (e) => {
@@ -37,6 +38,7 @@ function CarReservationForm() {
   };
 
   //   const [cars, setCars] = useState([]);
+
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [startDate, setStartDate] = useState(null);
@@ -47,7 +49,7 @@ function CarReservationForm() {
 
   useEffect(() => {
     instance
-      .get("/cars/" + id)
+      .get(`/cars/${id}`)
       .then((result) => {
         setCars(result.data);
       })

@@ -1,18 +1,14 @@
 import React, { useState } from "react";
-import "./Cards.css";
 import { ToastContainer, toast } from "react-toastify";
-import ImageCard from "@components/ImageCard";
 import instance from "../../helpers/axios";
-import ImageUpload from "@components/ImageCard";
+
+import "./Cards.css";
 
 function CardsCompany() {
   const [cards, setCards] = useState([{ id: 1, image: null }]);
   const notify = () => {
     toast.dark(" cars created ! ✅ ");
   };
-
-  const [isEditing, setIsEditing] = useState(false);
-  const [currentEditingCard, setCurrentEditingCard] = useState(null);
 
   const handleAddCard = () => {
     const newCard = { id: cards.length + 1, image: null };
@@ -23,22 +19,10 @@ function CardsCompany() {
     setCards(cards.filter((card) => card.id !== id));
   };
 
-  const handleSaveCard = (id) => {
-    const newCards = cards.map((card) => {
-      if (card.id === id) {
-        return { id };
-      }
-      return card;
-    });
-    setCards(newCards);
-  };
-
   const [cars, setCars] = useState("");
 
-  const handleChangeSubmit = (e) => {
-    const { name, value } = e.target;
-
-    setCars({ ...cars, [name]: value });
+  const handleChange = (e) => {
+    setCars({ ...cars, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
@@ -61,114 +45,106 @@ function CardsCompany() {
       />
       {cards.map((card) => (
         <div className="ContainerFormVehicle" key={card.id}>
-          <ImageUpload />
           {card.content}
           <form className="LabelVehicle" htmlFor="Card" onSubmit={handleSubmit}>
+            Picture:{" "}
+            <input
+              name="img"
+              type="url"
+              placeholder="URL"
+              onChange={handleChange}
+              required
+            />
             Make:{" "}
             <input
               name="make"
+              placeholder="Make"
               type="text"
-              onChange={handleChangeSubmit}
+              onChange={handleChange}
               required
             />
             Model:{" "}
-            <input
-              name="model"
-              type="text"
-              onChange={handleChangeSubmit}
-              required
-            />
+            <input name="model" type="text" onChange={handleChange} required />
             Autonomy:{" "}
             <input
               name="autonomy"
+              placeholder="Mileage without spaces"
               type="text"
-              onChange={handleChangeSubmit}
+              onChange={handleChange}
               required
             />
             City:{" "}
             <input
               name="city"
+              placeholder="City"
               type="text"
-              onChange={handleChangeSubmit}
+              onChange={handleChange}
               required
             />
             Miles:{" "}
-            <input
-              name="miles"
-              type="text"
-              onChange={handleChangeSubmit}
-              required
-            />
+            <input name="miles" type="text" onChange={handleChange} required />
             Year:{" "}
-            <input
-              name="year"
-              type="text"
-              onChange={handleChangeSubmit}
-              required
-            />
+            <input name="year" type="text" onChange={handleChange} required />
             Seats:{" "}
-            <input
-              name="seats"
-              type="text"
-              onChange={handleChangeSubmit}
-              required
-            />
-            
+            <input name="seats" type="text" onChange={handleChange} required />
             Available:{" "}
             <fieldset>
               <input
                 name="available"
                 type="radio"
                 value="0"
-                onChange={handleChangeSubmit}
+                onChange={handleChange}
               />
               <label htmlFor="type">available</label>
               <input
                 name="available"
                 type="radio"
                 value="1"
-                onChange={handleChangeSubmit}
+                onChange={handleChange}
               />
               <label htmlFor="type">not available</label>
             </fieldset>
-            <fieldset >
+            <fieldset>
               <input
                 type="radio"
                 id="casual"
                 name="type"
                 placeholder="type"
                 value="casual"
-                onChange={handleChangeSubmit}
+                onChange={handleChange}
               />
-              <label  htmlFor="type">Casual</label>
-              <input 
+              <label htmlFor="type">Casual</label>
+              <input
                 type="radio"
                 id="confort"
                 name="type"
                 placeholder="type"
                 value="confort"
-                onChange={handleChangeSubmit}
+                onChange={handleChange}
               />
               <label htmlFor="administrateur"> Comfort</label>
             </fieldset>
           </form>
-          <div className="ButtonForm" >
-            <button 
-            type="submit" 
-            className="SubmitButton">
+          <div className="ButtonForm">
+            <button
+              type="submit"
+              className="SubmitButton"
+              onClick={(e) => handleSubmit(e)}
+            >
               Submit
             </button>
-          <button
-            type="button"
-            className="DeleteButton"
-            onClick={() => handleDeleteCard(card.id)}>
-            Delete
-          </button>
-        </div>
+            <button
+              type="button"
+              className="DeleteButton"
+              onClick={() => handleDeleteCard(card.id)}
+            >
+              Delete
+            </button>
+          </div>
         </div>
       ))}
       <div className="ButtonAdd">
-        <button className="AddNewVehicle" onClick={handleAddCard}>
+        <button type="button" className="AddNewVehicle" onClick={handleAddCard}>
           Add New Vehicle
         </button>
       </div>

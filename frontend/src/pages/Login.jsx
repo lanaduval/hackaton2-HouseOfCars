@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "../assets/styles/Login.css";
-import instance from "../helpers/axios";
 import NavbarOtherPages from "@components/layout-components/NavbarOtherPages/NavbarOtherPages";
 import Footer from "@components/layout-components/Footer/Footer";
+import instance from "../helpers/axios";
 
 function Login() {
   const [loginUser, setLoginUser] = useState("");
@@ -49,7 +49,7 @@ function Login() {
           </form>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

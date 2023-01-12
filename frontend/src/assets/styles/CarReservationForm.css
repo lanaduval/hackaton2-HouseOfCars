@@ -44,25 +44,26 @@ background-color:#9faddb;
     margin-bottom: 2rem;;
 }
 
-.LabelResa{
-    margin: 1%;
+.LabelResa {
+  margin: 1%;
 }
 
-.InputResa{
-    margin: 3%;
-    outline: none;
-    border-radius: 0.5rem;
-    border-top: 0;
-    border-left: 0;
+.InputResa {
+  margin: 3%;
+  outline: none;
+  border-radius: 0.5rem;
+  border-top: 0;
+  border-left: 0;
 }
 
-.SubmitResa{
-    display: flex;
-    flex-direction: column-reverse;
-    border-radius: 0.5rem;
-    margin: 1%;
-    cursor: pointer;
+.SubmitResa {
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 0.5rem;
+  margin: 1%;
+  cursor: pointer;
 }
+
 
 @media screen and (min-width: 391px){
     .FormResa{
@@ -76,3 +77,4 @@ background-color:#9faddb;
         width: 50%;
     }    
 }
+

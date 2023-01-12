@@ -1,21 +1,36 @@
 .seemorepage {
-  min-height: 100%;
-}
-
-.seemoretotal {
-  display: flex;
-  flex: 1;
-  justify-content: space-evenly;
   background-color: #dcdcdd;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 1rem;
-  margin: 2rem;
+  margin: 3rem 4rem;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.seemoretotal {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.seemoretotal a {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.img-close {
+  width: 2rem;
 }
 
 .carpicture {
-  width: 300px;
-  height: 170px;
+  width: 500px;
+  height: 370px;
 }
 
 .carpicture img {
@@ -54,6 +69,15 @@
 @media screen and (max-width: 391px) {
   .seemoretotal {
     flex-direction: column;
+  }
+
+  .seemorepage a {
+    padding-bottom: 0.5rem;
+  }
+
+  .carpicture {
+    width: 300px;
+    height: 170px;
   }
 
   .description p {

@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
 import "../assets/styles/Login.css";
 import NavbarOtherPages from "@components/layout-components/NavbarOtherPages/NavbarOtherPages";
 import Footer from "@components/layout-components/Footer/Footer";
@@ -18,11 +19,20 @@ function Login() {
     instance
       .post("/login", loginUser)
       .then(() => navigate("/CompanyPage"))
-      .catch((err) => console.error(err));
+      .catch((err) =>
+        console.error(err, toast.error("Wrong informations ! ❌"))
+      );
   };
 
   return (
     <>
+      <ToastContainer
+        theme="dark"
+        autoClose={2000}
+        position="bottom-center"
+        className="toast-container"
+        toastClassName="dark-toast"
+      />
       <NavbarOtherPages />
       <div className="Container">
         <div className="Login">

@@ -1,80 +1,66 @@
-.BodyForm{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-background-color:#262730;
-}
 .CarDescription{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-top: 3rem;
-    padding: 2%;
-    background-color:rgb(11,14,32, 0.3);
+    margin:3rem;
+    padding: 3rem;
+    background-color:#0b0e204d;
     border-radius: 1rem;
-    width: 50%;
     font-family: 'Sora';
     font-size: 1.2rem;
     color: #EFF0D1;
-
-   
-}
-.BodyForm h2 {
-    font-family: 'Sora';
-    margin-bottom: 2rem;
-    color:#F58A07;
+    width: 40%;   
 }
 
-.CarTitle{
-    font-size: larger;
-    font-weight: bold;
-    font-family: 'Sora';
+.ResaCards {
+display: flex;
+flex-direction: row-reverse;
+margin-bottom: 3rem;
 }
-
-.FormResa{
-    margin: 1%;
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(11,14,32, 0.3);
-    border-radius: 1rem;
-    width: 50%;
-    font-family: 'Sora';
-    margin-bottom: 2rem;;
-}
-
-.LabelResa {
-  margin: 1%;
-}
-
-.InputResa {
-  margin: 3%;
-  outline: none;
-  border-radius: 0.5rem;
-  border-top: 0;
-  border-left: 0;
-}
-
-.SubmitResa {
+#submitResa {
   display: flex;
   flex-direction: column-reverse;
   border-radius: 0.5rem;
-  margin: 1%;
   cursor: pointer;
+  background:#F58A07;
+  border: none;
+    height: 2rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    font-family: 'Sora';
+    font-size: 1.2rem;
+    color:#262730;
+width: 40%;
+align-self: center;
+    align-items: center;
+}
+.CarDescription input, button{
+    border: none;
+    height: 2rem;
+    background:#EFF0D1 ;
+    border-radius: 1rem;
+    margin: 1rem;
+    width: 100%;
+}
+.LabelResa {
+    color:#eff0d192;
 }
 
-
-@media screen and (min-width: 391px){
-    .FormResa{
-        margin: 1%;
+@media screen and (max-width: 391px){
+    .ResaCards {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background-color: #6c85d6;
+        margin-bottom: 3rem;
+        flex-direction: column-reverse;
+        }
+    .CarDescription{
+        display: flex;
+        
+        padding: 2rem;
+        background-color:#0b0e204d;
         border-radius: 1rem;
-        width: 50%;
-    }    
+        font-family: 'Sora';
+        font-size: 1.2rem;
+        color: #EFF0D1;
+        width: 60%;
+    }  
 }
 

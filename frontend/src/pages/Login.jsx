@@ -4,7 +4,6 @@ import "../assets/styles/Login.css";
 import instance from "../helpers/axios";
 
 function Login() {
-
   const [loginUser, setLoginUser] = useState("");
   const navigate = useNavigate();
 

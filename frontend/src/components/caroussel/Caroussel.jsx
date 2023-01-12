@@ -42,8 +42,6 @@ function Caroussel() {
     }
   };
 
-  
-
   // Nous avons la const filterCars qui permet de filtrer les voitures !
   const filterCars = cars.filter(
     (car) =>

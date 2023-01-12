@@ -21,7 +21,7 @@ export default function NavbarHome() {
         <img className="logo" src={logo} alt="Logo" />
         <Link to="/login">
           <button type="button" className="login_button">
-            Login
+            Company Space
           </button>
         </Link>
       </header>

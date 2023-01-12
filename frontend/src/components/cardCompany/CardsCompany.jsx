@@ -3,6 +3,7 @@ import "./Cards.css";
 import { ToastContainer, toast } from "react-toastify";
 import ImageCard from "@components/ImageCard";
 import instance from "../../helpers/axios";
+import ImageUpload from "@components/ImageCard";
 
 function CardsCompany() {
   const [cards, setCards] = useState([{ id: 1, image: null }]);
@@ -60,7 +61,7 @@ function CardsCompany() {
       />
       {cards.map((card) => (
         <div className="ContainerFormVehicle" key={card.id}>
-          <ImageCard />
+          <ImageUpload />
           {card.content}
           <form className="LabelVehicle" htmlFor="Card" onSubmit={handleSubmit}>
             Make:{" "}

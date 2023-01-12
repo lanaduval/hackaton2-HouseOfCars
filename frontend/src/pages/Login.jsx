@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "../assets/styles/Login.css";
 import instance from "../helpers/axios";
+import NavbarOtherPages from "@components/layout-components/NavbarOtherPages/NavbarOtherPages";
 
 function Login() {
   const [loginUser, setLoginUser] = useState("");
@@ -20,6 +21,8 @@ function Login() {
   };
 
   return (
+    <div className="Container" >
+      <NavbarOtherPages/>
     <div className="Login">
       <form className="loginForm" onSubmit={handleLogin}>
         <input
@@ -42,6 +45,7 @@ function Login() {
           Login
         </button>
       </form>
+    </div>
     </div>
   );
 }

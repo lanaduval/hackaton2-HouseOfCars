@@ -12,6 +12,7 @@ function Caroussel() {
   const [currentPage, setCurrentPage] = useState(0);
   const [category, setCategory] = useState("");
   const [location, setLocation] = useState("");
+
   const [cars, setCars] = useState([]);
 
   // useEffect
@@ -66,6 +67,7 @@ function Caroussel() {
               <option value="">--</option>
               <option value="confort">Confort</option>
               <option value="casual">Casual</option>
+
             </select>
           </label>
           <label htmlFor="localisation-select">
@@ -81,6 +83,7 @@ function Caroussel() {
               <option value="Marseille">Marseille</option>
               <option value="Toulouse">Toulouse</option>
               <option value="Reims">Reims</option>
+
             </select>
           </label>
         </form>

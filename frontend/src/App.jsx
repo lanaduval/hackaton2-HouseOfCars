@@ -6,7 +6,8 @@ import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
-
+import CarReservationForm from "./pages/Reservation";
+import PaymentPage from "/src/components/paiement/PaiementForm";
 import "./App.css";
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/CompanyPage" element={<CompanyPage />} />
+        <Route path="/booking/:id" element={<CarReservationForm />} />
+        <Route path="/pay" element={<PaymentPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

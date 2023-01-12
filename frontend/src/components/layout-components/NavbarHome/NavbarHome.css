@@ -39,7 +39,7 @@
 
 /* General sidebar styles */
 .bm-menu {
-  background: #262730;
+  background: rgb(11, 14, 32);
   padding: 2.5em 1.5em 0;
   font-family: "Sora";
   font-size: 1.15em;
@@ -52,7 +52,7 @@
 
 #outer-container {
   height: 6.5rem;
-  background-color: #262730;
+  background-color: rgb(11, 14, 32, 0.3);
 }
 
 .header {
@@ -73,6 +73,7 @@
   border-radius: 3px;
   border: none;
   background-color: #f58a07;
+  box-shadow: #121217 0px 3px 8px;
   font-family: "Sora";
   font-size: 1.2rem;
   font-weight: 600;

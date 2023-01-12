@@ -18,7 +18,7 @@ const ImageCard = e => {
   return (
     <div>
      <input type="file" ref={inputRef} onChange={handleImageChange} style={{ display: "none" }}  />
-     <button onClick={handleClick}>Add picture</button>
+     <button  className="AddPicture"  onClick={handleClick}>Add picture</button>
       <img src={image} style={{ maxWidth: "400px", maxHeight: "300px" }} />
     </div>
   );

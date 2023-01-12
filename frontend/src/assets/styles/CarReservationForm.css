@@ -1,25 +1,34 @@
 .BodyForm{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+background-color:#9faddb;
 }
-
 .CarDescription{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: 1%;
+    margin-top: 3rem;
     padding: 2%;
-    background-color: #6c85d6;
+    background-color:#6c85d6;
     border-radius: 1rem;
     width: 50%;
+    font-family: 'Sora';
+    font-size: 1.2rem;
+    color: #ecedf0;
+
+   
+}
+.BodyForm h2 {
+    font-family: 'Sora';
+    margin-bottom: 2rem;
+    color:#BF3E9F;
 }
 
 .CarTitle{
     font-size: larger;
     font-weight: bold;
+    font-family: 'Sora';
 }
 
 .FormResa{
@@ -27,11 +36,12 @@
     padding: 2%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: #6c85d6;
     border-radius: 1rem;
     width: 50%;
+    font-family: 'Sora';
+    margin-bottom: 2rem;;
 }
 
 .LabelResa{

@@ -1,4 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCheckSquare,
+  faCar,
+  faUsers,
+  faLocationArrow,
+} from "@fortawesome/fontawesome-free-solid";
+import emailjs from "@emailjs/browser";
 import { useParams } from "react-router-dom";
 import instance from "../helpers/axios";
 import "../assets/styles/CarReservationForm.css";
@@ -6,6 +14,28 @@ import NavbarOtherPages from "../components/layout-components/NavbarOtherPages/N
 import Footer from "../components/layout-components/Footer/Footer";
 
 function CarReservationForm() {
+  // gère l'envoi mail
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_YOUR_SERVICE_ID,
+        import.meta.env.VITE_YOUR_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_YOUR_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   //   const [cars, setCars] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -25,7 +55,6 @@ function CarReservationForm() {
         console.error(err);
       });
   }, []);
-  console.log(cars);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -37,24 +66,82 @@ function CarReservationForm() {
       <NavbarOtherPages />
       <div className="BodyForm">
         <div className="CarDescription">
-          <p className="CarTitle">Car description:</p>
+          <h1 className="CarTitle"> Car Description </h1>
           <img src={cars.img} alt="car on the road" />
-          <p>Make: {cars.make}</p>
+          <FontAwesomeIcon
+            className="fab fa-react fa-2x"
+            style={{
+              color: "#FFF",
+              marginInline: "1rem",
+              paddingBlock: "1rem",
+            }}
+            icon={faCar}
+          />
+          <p> Make: {cars.make} </p>
           <p>Model: {cars.model}</p>
           <p>Autonomy: {cars.autonomy}</p>
-          <p>City: {cars.city}</p>
           <p>Miles: {cars.miles}</p>
           <p>Year: {cars.year}</p>
-          <p>Seats: {cars.seats}</p>
           <p>Type: {cars.type}</p>
+          <FontAwesomeIcon
+            className="fab fa-react fa-2x"
+            style={{
+              color: "#FFF",
+              marginInline: "1rem",
+              paddingBlock: "1rem",
+            }}
+            icon={faUsers}
+          />
+          <p>Seats: {cars.seats}</p>
+          <FontAwesomeIcon
+            className="fab fa-react fa-2x"
+            style={{
+              color: "#FFF",
+              marginInline: "1rem",
+              paddingBlock: "1rem",
+            }}
+            icon={faLocationArrow}
+          />
+          <p>City: {cars.city}</p>
         </div>
 
-        <form className="FormResa" onSubmit={handleSubmit}>
+        <h2> Ready ? </h2>
+        <h2> Thanks to fill up the form to book it !</h2>
+        <FontAwesomeIcon
+          className="fab fa-react fa-2x"
+          style={{
+            color: "#FFF",
+            marginInline: "1rem",
+            paddingBlock: "1rem",
+          }}
+          icon={faCheckSquare}
+        />
+        <form className="FormResa" ref={form} onSubmit={sendEmail}>
+          <input type="hidden" name="make" value={cars.make} />
+          <input type="hidden" name="model" value={cars.model} />
+          <input type="hidden" name="city" value={cars.city} />
+          <input type="hidden" name="city" value={cars.miles} />
+          <input type="hidden" name="seats" value={cars.seats} />
+
+          <label className="LabelResa">
+            Firstname:
+            <input className="InputResa" type="Texte" name="firstname" />
+          </label>
+          <label className="LabelResa">
+            Lastname:
+            <input className="InputResa" type="Texte" name="lastname" />
+          </label>
+          <label className="LabelResa">
+            Email:
+            <input className="InputResa" type="email" />
+          </label>
+
           <label className="LabelResa">
             Start Date:
             <input
               className="InputResa"
               type="date"
+              name="startDate"
               value={startDate}
               onChange={(e) => setStartDate(e.target.value)}
             />
@@ -63,6 +150,7 @@ function CarReservationForm() {
             End Date:
             <input
               className="InputResa"
+              name="endDate"
               type="date"
               value={endDate}
               onChange={(e) => setEndDate(e.target.value)}

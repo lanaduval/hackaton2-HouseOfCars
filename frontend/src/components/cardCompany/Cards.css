@@ -31,6 +31,7 @@
     border-radius: 0.5rem;
     border-top: 0;
     border-left: 0;
+}
 
 .TextAnnounce {
   max-width: 50%;
@@ -100,18 +101,4 @@
   border-radius: 1rem;
   width: 30%;
 }
-
-@media screen and (min-width: 970px) {
-  .ContainerFormVehicle {
-    margin: 1%;
-  }
-
-    margin: 2%;
-    border-radius: 0.5rem;
-    width: 5%;
-  }
-  .AddNewButton {
-    width: 29%;
-    margin-left: 31%;
-  }
 }

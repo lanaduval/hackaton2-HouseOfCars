@@ -37,7 +37,7 @@ export default function SeeMore() {
             <p>Make: {cars.make}</p>
             <p>Model: {cars.model}</p>
             <p>Autonomy: {cars.autonomy}</p>
-            <p>City: {cars.city}</p>
+            <p>Pick-up: {cars.city}</p>
             <p>Miles: {cars.miles}</p>
             <p>Year: {cars.year}</p>
             <p>Seats: {cars.seats}</p>

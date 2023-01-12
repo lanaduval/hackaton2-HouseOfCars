@@ -39,3 +39,18 @@
   background-color: #0b0e20;
   color: #dcdcdd;
 }
+
+@media screen and (max-width: 391px) {
+  .seemoretotal {
+    flex-direction: column;
+  }
+
+  .description p {
+    margin: 0;
+    padding: 0.5rem;
+  }
+
+  .description a {
+    text-align: center;
+  }
+}

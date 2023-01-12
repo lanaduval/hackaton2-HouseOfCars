@@ -3,6 +3,7 @@ import { useState } from "react";
 import "../assets/styles/Login.css";
 import instance from "../helpers/axios";
 import NavbarOtherPages from "@components/layout-components/NavbarOtherPages/NavbarOtherPages";
+import Footer from "@components/layout-components/Footer/Footer";
 
 function Login() {
   const [loginUser, setLoginUser] = useState("");
@@ -21,32 +22,35 @@ function Login() {
   };
 
   return (
-    <div className="Container" >
-      <NavbarOtherPages/>
-    <div className="Login">
-      <form className="loginForm" onSubmit={handleLogin}>
-        <input
-          className="email"
-          type="email"
-          name="email"
-          placeholder="Email"
-          onChange={handleChangeLogin}
-          required
-        />
-        <input
-          className="password"
-          type="password"
-          name="password"
-          placeholder="Password"
-          onChange={handleChangeLogin}
-          required
-        />
-        <button className="SubmitLogin" type="submit">
-          Login
-        </button>
-      </form>
-    </div>
-    </div>
+    <>
+      <NavbarOtherPages />
+      <div className="Container">
+        <div className="Login">
+          <form className="loginForm" onSubmit={handleLogin}>
+            <input
+              className="email"
+              type="email"
+              name="email"
+              placeholder="Email"
+              onChange={handleChangeLogin}
+              required
+            />
+            <input
+              className="password"
+              type="password"
+              name="password"
+              placeholder="Password"
+              onChange={handleChangeLogin}
+              required
+            />
+            <button className="SubmitLogin" type="submit">
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+      <Footer/>
+    </>
   );
 }
 

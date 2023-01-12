@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5%;
+  margin: 2%;
   border: solid 1px;
   border-radius: 1rem;
   background-color: #6c85d6;
@@ -22,8 +22,9 @@
   flex-direction: column;
   align-items: baseline;
   margin: 2%;
-}
+  font-size: larger;
 
+}
 
 .LabelVehicle input{
     margin: 2%;
@@ -33,14 +34,23 @@
     border-left: 0;
 }
 
+fieldset{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ gap: 8%;
+ border: none;
+}
+
 .TextAnnounce {
   max-width: 50%;
   max-height: 10%;
 }
 
-.AddNewButton{
+.AddNewVehicle{
     margin: 1%;
-    margin-bottom: 5%;
+    margin-bottom: 15%;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: row;
@@ -48,15 +58,8 @@
     width: 60%; 
     margin-left: 16%;
     cursor: pointer;
-}
+    background-color: #BF3E9F;
 
-.DeleteButton{
-    display: flex;
-    justify-content:center;
-    margin: 2%;
-    border-radius: 0.5rem;
-    max-width: 30%;
-    cursor: pointer;
 }
 
 .AddPicture{
@@ -65,33 +68,61 @@
     margin: 2%;
     margin-top: 40%;
     border-radius: 0.5rem;
-    max-width: 100%;
+    width: 110%;
+    /* max-width: 100%; */
     cursor: pointer;
+    background-color: #BF3E9F;
+
 }
 
 .SubmitButton{
-    display: flex;
-    justify-content:center;
-    margin: 1%;
+    margin: 2%;
     border-radius: 0.5rem;
-    max-width: 100%;  
-    cursor: pointer;
+    width: 40%;
+    background-color: #BF3E9F;
+
 }
 
-@media screen and (min-width: 970px) {
+.DeleteButton{
+  margin: 2%;
+  border-radius: 0.5rem;
+  width: 40%;
+  background-color: #BF3E9F;
+
+}
+
+.ButtonForm{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  max-width: 100%;  
+  margin: 2%;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 391px) {
 
 .ContainerFormVehicle{
     border-radius: 1rem;
 }
 
-.AddNewButton {
+.ButtonAdd{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.AddNewVehicle {
   margin: 1%;
+  margin-bottom: 5% ;
   border-radius: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 60%;
-  margin-left: 16%;
+  width:7%;
 }
 
 .DeleteButton {
@@ -99,6 +130,28 @@
   justify-content: center;
   margin: 2%;
   border-radius: 1rem;
-  width: 30%;
+  width: 5%;
 }
+
+.ButtonForm{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 50%;
+margin: 2%;
+}
+
+.SubmitButton{
+  width: 10%;
+}
+
+.DeleteButton{
+width: 10%;
+}
+
+.LabelVehicle input{
+width: 100%;
+}
+
 }

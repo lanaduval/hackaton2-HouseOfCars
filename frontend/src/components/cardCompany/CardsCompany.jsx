@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import "./Cards.css";
+import { ToastContainer, toast } from "react-toastify";
 import ImageCard from "@components/ImageCard";
 import instance from "../../helpers/axios";
 
 function CardsCompany() {
   const [cards, setCards] = useState([{ id: 1, image: null }]);
+  const notify = () => {
+    toast.dark(" cars created ! ✅ ");
+  };
 
   const [isEditing, setIsEditing] = useState(false);
   const [currentEditingCard, setCurrentEditingCard] = useState(null);
@@ -40,11 +44,18 @@ function CardsCompany() {
     e.preventDefault();
     instance
       .post("/cars", cars)
-      .then((res) => console.warn(res.data))
-      .catch((err) => console.error(err));
+      .then((res) => console.warn(res.data), notify())
+      .catch((err) => console.error(err), toast.error("Formulaire vide ! ❌"));
   };
   return (
     <div>
+      <ToastContainer
+        theme="dark"
+        autoClose={2000}
+        position="bottom-center"
+        className="toast-container"
+        toastClassName="dark-toast"
+      />
       {cards.map((card) => (
         <div className="ContainerFormVehicle" key={card.id}>
           <ImageCard />

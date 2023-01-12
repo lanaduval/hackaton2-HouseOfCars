@@ -1,0 +1,72 @@
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+@import url(https://fonts.googleapis.com/css?family=Audiowide:regular); */
+
+/*Link style*/
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+  margin-right: 1rem;
+}
+
+/*Link hover*/
+.bm-item:hover {
+  color: #bf3e9f;
+}
+
+/*Button menu burger*/
+.bm-burger-button {
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #bf3e9f;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bf3e9f;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #0b0e20;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: #0b0e20;
+}
+
+#outer-container {
+  height: 6.5rem;
+  background-color: #0b0e20;
+}
+
+.logo {
+  width: 200px;
+  margin: auto;
+}
+
+@media screen and (max-width: 391px) {
+  .logo {
+    width: 120px;
+    margin-left: 7rem;
+    margin-right: 1rem;
+  }
+}

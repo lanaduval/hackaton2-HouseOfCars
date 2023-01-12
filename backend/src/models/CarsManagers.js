@@ -25,6 +25,12 @@ class UsersManager extends AbstractManager {
       ]
     );
   }
+
+  find(id) {
+    return this.connection.query(`select * from  ${this.table} where id = ?`, [
+      id,
+    ]);
+  }
 }
 
 module.exports = UsersManager;

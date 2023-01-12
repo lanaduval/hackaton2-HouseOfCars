@@ -53,32 +53,43 @@ const put = (req, res) => {
     });
 };
 
-const signUpUser = (req, res) => {
-  const { pw } = req.body;
+const login = async (req, res) => {
+  const { email, password } = req.body;
 
-  const hashingOptions = {
-    type: argon2id,
-    memoryCost: 2 ** 16,
-    timeCost: 5,
-    parallelism: 1,
-  };
-
-  hash(pw, hashingOptions).then((hashedPassword) => {
-    const user = {
-      ...req.body,
-      hashedPassword,
-    };
-    models.user.findByMatricule(user).then(([rows]) => {
-      if (rows.affectedRows === 1) {
-        return res.status(201).json({ success: "User saved" });
+  models.company
+    .findByEmail(email)
+    .then(([[company]]) => {
+      if (!company) {
+        return res.status(403).json({ error: "Company not found" });
       }
-      return res.status(403).json({ error: "une erreur s'est produite" });
+      // vérifier le MDP
+      verify(company.password, password)
+        .then((match) => {
+          if (match) {
+            // 3 je retourne mon token//
+            const token = generateToken({ id: company.id, email: company.email });
+            return res
+              .cookie("company_auth", token, { httpOnly: true, secure: false })
+              .status(200)
+              .json({ token, sucess: "Company logged" });
+          }
+          return res.status(403).json({ error: "password incorrect" });
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+      return false;
+    })
+    .catch((err) => {
+      console.error(err);
+      res.sendStatus(500);
     });
-  });
 };
+
 
 module.exports = {
   browse,
   add,
   put,
+  login,
 };

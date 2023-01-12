@@ -14,8 +14,6 @@ export default function TestBack() {
       });
   }, []);
 
-  console.log(cars);
-
   return (
     <div>
       {cars.map((car, index) => (

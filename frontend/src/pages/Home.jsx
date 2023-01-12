@@ -9,7 +9,6 @@ export default function Home() {
       <Navbar />
       <FiltreBar />
       <Footer />
-      <TestBack />
     </>
   );
 }

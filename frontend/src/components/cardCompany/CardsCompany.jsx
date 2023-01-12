@@ -44,8 +44,8 @@ function CardsCompany() {
     e.preventDefault();
     instance
       .post("/cars", cars)
-      .then((res) => console.warn(res.data), notify())
-      .catch((err) => console.error(err), toast.error("Formulaire vide ! ❌"));
+      .then((res) => console.warn(res.data, notify()))
+      .catch((err) => console.error(err, toast.error("Wrong informations ! ❌")));
   };
   return (
     <div>

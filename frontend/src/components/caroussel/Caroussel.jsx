@@ -8,8 +8,8 @@ import "./FilterBar.css";
 
 function Caroussel() {
   const [currentPage, setCurrentPage] = useState(0);
-  const [category, setCategory] = useState(null);
-  const [location, setLocation] = useState(null);
+  const [category, setCategory] = useState([]);
+  const [location, setLocation] = useState([]);
   const [cars, setCars] = useState([]);
   useEffect(() => {
     instance
@@ -55,7 +55,7 @@ function Caroussel() {
             >
               <option value="">--</option>
               {filterCars.map((car) => (
-                <option value="category">{car.type}</option>
+                <option key={car.id} value="">{car.type}</option>
               ))}
             </select>
           </label>
@@ -67,7 +67,7 @@ function Caroussel() {
             >
               <option value="">All</option>
               {filterCars.map((car) => (
-                <option value="location">{car.city}</option>
+                <option key={car.id} value="location">{car.city}</option>
               ))}
             </select>
           </label>

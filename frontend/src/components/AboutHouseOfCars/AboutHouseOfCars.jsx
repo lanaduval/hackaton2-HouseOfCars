@@ -2,25 +2,36 @@ import "./AboutHouseOfCars.css";
 
 function AboutHouseOfCars() {
   return (
-    <div className="container">
-      <h1 className="titre">About Our Car Rental App</h1>
-      <img
-        src="../src/assets/img/about/bookCar.png"
-        className="img"
-        alt="Book a car"
-      />
-      <p className="content">
-        Our car rental application is designed specifically for Amazon
-        employees. The app allows Amazon employees to rent cars for personal or
-        business use at discounted rates. The app also allows for easy pick-up
-        and drop-off of the cars at designated Amazon locations.
-      </p>
-      <p className="content">
-        With our app, Amazon employees can have access to a wide range of
-        vehicles to choose from, including economy, luxury, and SUV options. Our
-        user-friendly interface makes it easy to find and reserve the perfect
-        vehicle for your needs.
-      </p>
+    <div className="container_about">
+      <div>
+        <img
+          src="../src/assets/img/about/bookCar.png"
+          className="img_about"
+          alt="Book a car"
+        />
+      </div>
+      <div>
+        <h1 className="titre_about">About Our Car Rental App</h1>
+        <p className="content_about">
+          House of Cars is a car rental application. Easy to use, simply select
+          the city of your choice to find vehicles made available by our
+          companies and organizations available. A comfort or casual option is
+          also available. In order to allow you to make ethical choices,
+          electric vehicles are also part of our fleet.
+        </p>
+        <p className="content_about">
+          Are you a car rental professional and you want to benefit from our
+          service? Contact us directly through our form. We will respond to you
+          as soon as possible.
+        </p>
+        <p className="content_about">
+          House of Cars is an application in beta test mode. That is why rentals
+          are currently free in order to test our service and benefit from your
+          feedback. Which we hope will be numerous! We take this opportunity to
+          thank our partners who are following us in our projects.
+        </p>
+        <p className="content_about">Happy driving to all.</p>
+      </div>
     </div>
   );
 }

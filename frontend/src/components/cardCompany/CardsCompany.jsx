@@ -162,6 +162,9 @@ function CardsCompany() {
           </button>
         </div>
       ))}
+       <div className='AddNewButton'>
+        <button className='AddNewButton' onClick={handleAddCard}>Add New Vehicle</button>
+        </div>
     </div>
   );
 }

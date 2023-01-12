@@ -7,6 +7,7 @@ import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
+import Credits from "./pages/Credits";
 import "./App.css";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/CompanyPage" element={<CompanyPage />} />
         <Route path="/booking/:id" element={<CarReservationForm />} />
+        <Route path="/Credits*" element={<Credits />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

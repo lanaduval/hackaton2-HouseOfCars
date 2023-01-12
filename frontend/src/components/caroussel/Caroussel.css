@@ -13,6 +13,9 @@
 
 .image-slider {
   width: 20rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .cards {
@@ -30,6 +33,7 @@
   background-color: #dcdcdd;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 0.8rem;
+  border-radius: 5px;
 }
 
 .make-car {

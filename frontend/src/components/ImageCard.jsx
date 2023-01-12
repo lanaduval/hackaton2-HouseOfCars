@@ -1,9 +1,9 @@
 import React, { useState, useRef } from "react";
 
-const ImageCard = e => {
+function ImageCard(e) {
   const [image, setImage] = useState(null);
 
-  const handleImageChange = e => {
+  const handleImageChange = (e) => {
     setImage(URL.createObjectURL(e.target.files[0]));
   };
 
@@ -13,15 +13,18 @@ const ImageCard = e => {
     inputRef.current.click();
   };
 
-  
-
   return (
     <div>
-     <input type="file" ref={inputRef} onChange={handleImageChange} style={{ display: "none" }}  />
-     <button onClick={handleClick}>Add picture</button>
+      <input
+        type="file"
+        ref={inputRef}
+        onChange={handleImageChange}
+        style={{ display: "none" }}
+      />
+      <button onClick={handleClick}>Add picture</button>
       <img src={image} style={{ maxWidth: "400px", maxHeight: "300px" }} />
     </div>
   );
-};
+}
 
 export default ImageCard;

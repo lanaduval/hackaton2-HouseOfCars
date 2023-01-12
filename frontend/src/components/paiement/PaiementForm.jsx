@@ -51,14 +51,4 @@ function PaymentForm() {
   );
 }
 
-const stripePromise = loadStripe("pk_test_TYooMQauvdEDq54NiTphI7jx");
-
-function PaymentPage() {
-  return (
-    <Elements stripe={stripePromise}>
-      <PaymentForm />
-    </Elements>
-  );
-}
-
-export default PaymentPage;
+export default PaymentForm;

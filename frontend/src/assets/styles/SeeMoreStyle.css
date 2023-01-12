@@ -1,0 +1,56 @@
+.seemoretotal {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #dcdcdd;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 30px;
+}
+
+.carpicture {
+  background-color: antiquewhite;
+  width: 200px;
+  height: 130px;
+}
+
+.description {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.description p {
+  list-style: none;
+  color: #0b0e20;
+}
+
+.description a {
+  border: solid 3px #0b0e20;
+  padding: 0.5rem;
+  margin: 15px;
+  border-radius: 30px;
+  color: #0b0e20;
+  text-decoration: none;
+}
+
+.description a:hover {
+  background-color: #0b0e20;
+  color: #dcdcdd;
+}
+
+@media screen and (max-width: 391px) {
+  .seemoretotal {
+    flex-direction: column;
+  }
+
+  .description p {
+    margin: 0;
+    padding: 0.5rem;
+  }
+
+  .description a {
+    text-align: center;
+  }
+}

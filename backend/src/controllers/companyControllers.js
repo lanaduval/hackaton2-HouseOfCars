@@ -68,7 +68,10 @@ const login = (req, res) => {
         .then((match) => {
           if (match) {
             // 3 je retourne mon token//
-            const token = generateToken({ id: company.id, email: company.email });
+            const token = generateToken({
+              id: company.id,
+              email: company.email,
+            });
             return res
               .cookie("company_auth", token, { httpOnly: true, secure: false })
               .status(200)

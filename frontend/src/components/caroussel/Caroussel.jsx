@@ -109,9 +109,11 @@ function Caroussel() {
                       See more
                     </button>
                   </Link>
-                  <button type="button" className="button-show">
-                    Book
-                  </button>
+                  <Link to={`/booking/${car.id}`}>
+                    <button type="button" className="button-show">
+                      Book
+                    </button>
+                  </Link>
                 </div>
               );
             })}

@@ -29,14 +29,14 @@ export default function SeeMore() {
           <img src={cars.img} alt="car on the road" />
         </div>
         <div className="description">
-         <p>Make: {cars.make}</p>
-         <p>Model: {cars.model}</p>
-         <p>Autonomy: {cars.autonomy}</p>
-         <p>City: {cars.city}</p>
-         <p>Miles: {cars.miles}</p>
-         <p>Year: {cars.year}</p>
-         <p>Seats: {cars.seats}</p>
-         <p>Type: {cars.type}</p>
+          <p>Make: {cars.make}</p>
+          <p>Model: {cars.model}</p>
+          <p>Autonomy: {cars.autonomy}</p>
+          <p>City: {cars.city}</p>
+          <p>Miles: {cars.miles}</p>
+          <p>Year: {cars.year}</p>
+          <p>Seats: {cars.seats}</p>
+          <p>Type: {cars.type}</p>
 
           <Link to={`/booking/${cars.id}`}>Booking this car</Link>
         </div>

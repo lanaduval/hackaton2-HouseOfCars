@@ -6,7 +6,7 @@ import NavbarOtherPages from "../components/layout-components/NavbarOtherPages/N
 import Footer from "../components/layout-components/Footer/Footer";
 
 function CarReservationForm() {
-//   const [cars, setCars] = useState([]);
+  //   const [cars, setCars] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [startDate, setStartDate] = useState(null);
@@ -30,7 +30,6 @@ function CarReservationForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
     setLoading(true);
-    
   };
 
   return (
@@ -40,7 +39,14 @@ function CarReservationForm() {
         <div className="CarDescription">
           <p className="CarTitle">Car description:</p>
           <img src={cars.img} alt="car on the road" />
+          <p>Make: {cars.make}</p>
+          <p>Model: {cars.model}</p>
           <p>Autonomy: {cars.autonomy}</p>
+          <p>City: {cars.city}</p>
+          <p>Miles: {cars.miles}</p>
+          <p>Year: {cars.year}</p>
+          <p>Seats: {cars.seats}</p>
+          <p>Type: {cars.type}</p>
         </div>
 
         <form className="FormResa" onSubmit={handleSubmit}>

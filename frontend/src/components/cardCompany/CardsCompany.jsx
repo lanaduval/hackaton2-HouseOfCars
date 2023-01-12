@@ -154,10 +154,7 @@ function CardsCompany() {
             </button>
           </form>
           <button
-
             type="button"
-
-
             className="DeleteButton"
             onClick={() => handleDeleteCard(card.id)}
           >

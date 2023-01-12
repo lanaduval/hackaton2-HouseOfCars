@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import instance from "../helpers/axios";
-
-import Navbar from "../components/layout-components/Navbar/Navbar";
+import NavbarOtherPages from "../components/layout-components/NavbarOtherPages/NavbarOtherPages";
 import Footer from "../components/layout-components/Footer/Footer";
 
 export default function SeeMore() {
@@ -19,10 +18,10 @@ export default function SeeMore() {
         console.error(err);
       });
   }, []);
-  
+
   return (
     <>
-      <Navbar />
+      <NavbarOtherPages />
 
       <div className="seemoretotal">
         <div className="carpicture">

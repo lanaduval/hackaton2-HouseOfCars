@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Footer.css";
 import twitter from "../../../assets/img/social/twitter.svg";
 import facebook from "../../../assets/img/social/facebook.svg";
@@ -10,7 +11,10 @@ export default function Footer() {
 
   return (
     <footer>
-      <p id="copyrigth">House of Cars</p>
+      <div className="container-team">
+        <p id="copyrigth">House of Cars</p>
+        <Link to="/Credits">- Team</Link>
+      </div>
       <div className="container-social">
         <a href={twitterLink} target="twitter icon social">
           <img src={twitter} alt="twitter" className="social" />

@@ -60,6 +60,10 @@
   margin: auto;
 }
 
+.header {
+  border-bottom: 1px solid #eff0d1;
+}
+
 @media screen and (max-width: 391px) {
   .logo {
     width: 120px;

@@ -60,6 +60,7 @@
   justify-content: space-between;
   align-items: center;
   height: inherit;
+  border-bottom: 1px solid #eff0d1;
 }
 
 .logo {

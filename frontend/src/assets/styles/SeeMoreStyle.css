@@ -1,14 +1,17 @@
 .seemoretotal {
   display: flex;
   justify-content: space-evenly;
-  background-color: #361a55;
+  background-color: #dcdcdd;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 1rem;
   margin: 2rem;
   border-radius: 30px;
 }
 
 .carpicture {
-  background-color: #cab5f2;
+  background-color: antiquewhite;
+  width: 200px;
+  height: 130px;
 }
 
 .description {
@@ -18,27 +21,21 @@
   justify-content: space-evenly;
 }
 
-.description ul {
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.description li {
+.description p {
   list-style: none;
-  color: whitesmoke;
+  color: #0b0e20;
 }
 
 .description a {
-  border: solid 3px whitesmoke;
+  border: solid 3px #0b0e20;
   padding: 0.5rem;
+  margin: 15px;
   border-radius: 30px;
-  color: whitesmoke;
+  color: #0b0e20;
   text-decoration: none;
 }
 
 .description a:hover {
-  background-color: whitesmoke;
-  color: #361a55;
+  background-color: #0b0e20;
+  color: #dcdcdd;
 }

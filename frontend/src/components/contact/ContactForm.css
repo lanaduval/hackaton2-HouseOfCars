@@ -1,4 +1,4 @@
-.container {
+.containerContactForm {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,21 +13,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Sora';
 }
 
-.container h1 {
-  color: black;
+.containerContactForm h1 {
+  color:#EFF0D1 ;
   font-family: "Lato";
-  font-size: 25px;
+  font-size: 2rem;
+  font-family: 'Sora';
 }
 
 #italic {
   font-style: italic;
   font-weight: 100;
+  font-family: 'Sora';
 }
 
-.container input {
-  font-family: "Lato";
+.containerContactForm input {
+   font-family: 'Sora';
   width: 16rem;
   padding: 20px 20px;
   border-radius: 6px;
@@ -36,10 +39,11 @@
   border: none;
   font-size: 1em;
   margin-top: 1rem;
+  background: #EFF0D1 ;
 }
 
-.container textarea {
-  font-family: "Lato";
+.containerContactForm textarea {
+   font-family: 'Sora';
   width: 16rem;
   padding: 60px 20px;
   border-radius: 6px;
@@ -48,6 +52,7 @@
   border: none;
   margin-top: 1rem;
   font-size: 1em;
+  background: #EFF0D1 ;
 }
 
 .buttonSubmit {
@@ -62,7 +67,9 @@
   margin-top: 2%;
   cursor: pointer;
   margin-top: 2rem;
-}
+  background:#F58A07;
+  }
+
 
 .buttonSubmit:hover {
   background: #323847;

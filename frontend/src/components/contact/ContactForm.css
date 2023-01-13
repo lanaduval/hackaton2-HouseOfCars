@@ -1,0 +1,92 @@
+.containerContactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 1em;
+  margin-bottom: 10rem;
+}
+
+.input_contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Sora";
+}
+
+.containerContactForm h1 {
+  color: #eff0d1;
+  font-family: "Lato";
+  font-size: 2rem;
+  font-family: "Sora";
+}
+
+#italic {
+  font-style: italic;
+  font-weight: 100;
+  font-family: "Sora";
+}
+
+.containerContactForm input {
+  font-family: "Sora";
+  width: 16rem;
+  padding: 20px 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1),
+    0 4px 6px 8px rgba(1, 1, 1, 0.05);
+  border: none;
+  font-size: 1em;
+  margin-top: 1rem;
+  background: #eff0d1;
+}
+
+.containerContactForm textarea {
+  font-family: "Sora";
+  width: 16rem;
+  padding: 60px 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1),
+    0 4px 6px 8px rgba(1, 1, 1, 0.05);
+  border: none;
+  margin-top: 1rem;
+  font-size: 1em;
+  background: #eff0d1;
+}
+
+.buttonSubmit {
+  width: 10em;
+  height: 2.5em;
+  background: #1c1b1b;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1), 2px 2px 2px rgba(1, 1, 1, 0.05);
+  border-radius: 6px;
+  border: none;
+  color: rgb(245, 241, 241);
+  font-size: 1em;
+  margin-top: 2%;
+  cursor: pointer;
+  margin-top: 2rem;
+  background: #f58a07;
+}
+
+.buttonSubmit:hover {
+  background: #323847;
+}
+
+.buttonSubmit:active {
+  background: #494141;
+}
+
+.contactLottie {
+  width: 7rem;
+  height: 7rem;
+}
+
+.logo_home {
+  margin-top: 2rem;
+}
+
+.logo_home:hover {
+  background: #494141;
+}

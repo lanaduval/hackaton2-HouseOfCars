@@ -14,9 +14,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "argon2": "^0.30.3",
     "cors": "^2.8.5",
     "express": "^4.17.2",
-    "mysql2": "^2.3.3"
+    "jsonwebtoken": "^9.0.0",
+    "mysql2": "^2.3.3",
+    "template-fullstack": "file:.."
   },
   "rules": {
     "no-console": [

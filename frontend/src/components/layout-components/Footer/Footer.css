@@ -1,0 +1,56 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: rgb(11, 14, 32, 0.3);
+  border-top: 1px solid #eff0d1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-top: 3%;
+}
+
+.container-team {
+  display: flex;
+  align-items: center;
+}
+
+.container-team a {
+  color: #eff0d1;
+  font-family: "Sora";
+  font-size: 1rem;
+  margin: 0;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 391px) {
+  footer {
+    position: relative;
+  }
+}
+
+#copyrigth {
+  color: #eff0d1;
+  font-family: "Sora";
+  font-size: 1rem;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.container-social {
+  display: flex;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  margin: 0.5rem;
+}

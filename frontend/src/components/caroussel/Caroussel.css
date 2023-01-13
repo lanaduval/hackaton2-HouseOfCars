@@ -1,0 +1,117 @@
+.slider-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 5rem 0;
+  gap: 1rem;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+.image-slider {
+  width: 20rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: rgb(11, 14, 32, 0.3);
+  box-shadow: #121217 0px 3px 8px;
+  padding: 0.8rem;
+  border-radius: 5px;
+}
+
+.make-car {
+  font-family: "Sora";
+  font-size: 2rem;
+  color: #eff0d1;
+  margin: 0;
+}
+
+.model-car {
+  font-family: "Sora";
+  font-size: 1.5rem;
+  color: #eff0d1;
+
+  margin: 0;
+}
+
+.button-show {
+  width: 8rem;
+  height: 2rem;
+  border-radius: 3px;
+  background-color: #f58a07;
+  border: none;
+  box-shadow: #111114 0px 3px 8px;
+  font-family: "Sora";
+  font-size: 1rem;
+  cursor: pointer;
+  color: #262730;
+}
+
+.button-show:hover {
+  color: #eff0d1;
+}
+
+.button-show:active {
+  background-color: #eff0d1;
+  color: rgb(77, 79, 81);
+}
+
+.arrow {
+  width: 2rem;
+  height: 2rem;
+}
+
+.button-previous {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.button-next {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 391px) {
+  .slider {
+    display: block;
+    margin-top: 1rem;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-previous {
+    display: none;
+  }
+
+  .button-next {
+    display: none;
+  }
+}

@@ -64,6 +64,7 @@
   font-size: 1.5rem;
   align-self: flex-start;
   margin-top: 1.5rem;
+  color: #eff0d1;
 }
 
 @media screen and (max-width: 391px) {

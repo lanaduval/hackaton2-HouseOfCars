@@ -2,8 +2,8 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "../assets/styles/Login.css";
-import NavbarOtherPages from "@components/layout-components/NavbarOtherPages/NavbarOtherPages";
-import Footer from "@components/layout-components/Footer/Footer";
+import NavbarOtherPages from "../components/layout-components/NavbarOtherPages/NavbarOtherPages";
+import Footer from "../components/layout-components/Footer/Footer";
 import instance from "../helpers/axios";
 
 function Login() {
@@ -34,14 +34,14 @@ function Login() {
         toastClassName="dark-toast"
       />
       <NavbarOtherPages />
-      <div className="Container">
-        <div className="Login">
+      <div className="container">
+        <div className="login">
           <form className="loginForm" onSubmit={handleLogin}>
             <input
               className="email"
               type="email"
               name="email"
-              placeholder="Email"
+              placeholder="example@gmail.com"
               onChange={handleChangeLogin}
               required
             />

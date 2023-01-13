@@ -32,7 +32,7 @@
   font-family: "Sora";
   font-size: 1.2rem;
   color: #262730;
-  width: 40%;
+  width: fit-content;
   align-self: center;
   align-items: center;
 }
@@ -69,18 +69,36 @@
 @media screen and (max-width: 391px) {
   .ResaCards {
     display: flex;
-    margin-bottom: 3rem;
     flex-direction: column-reverse;
+    align-items: center;
+    margin: auto;
+    width: auto;
   }
   .CarDescription {
     display: flex;
-
-    padding: 2rem;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
     background-color: #0b0e204d;
     border-radius: 1rem;
     font-family: "Sora";
     font-size: 1.2rem;
     color: #eff0d1;
     width: 60%;
+  }
+
+  .CarDescription h1 {
+    font-size: 1.8rem;
+  }
+
+  #submitResa {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .paragraphe {
+    font-size: 1.2rem;
+    align-self: flex-start;
+    margin-top: 1.5rem;
   }
 }

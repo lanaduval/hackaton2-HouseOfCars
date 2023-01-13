@@ -6,8 +6,8 @@ import instagram from "../../../assets/img/social/instagram.svg";
 
 export default function Footer() {
   const twitterLink = "https://twitter.com/home";
-  const facebookLink = "https://www.facebook.com/";
-  const instagramLink = "https://www.instagram.com/";
+  const facebookLink = "https://www.facebook.com/profile.php?id=100089712330412";
+  const instagramLink = "https://www.instagram.com/houseofcars16/?hl=fr";
 
   return (
     <footer>

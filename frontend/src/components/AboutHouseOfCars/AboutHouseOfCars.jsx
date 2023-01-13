@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/fontawesome-free-solid";
 import "./AboutHouseOfCars.css";
 
 function AboutHouseOfCars() {
@@ -30,7 +32,18 @@ function AboutHouseOfCars() {
           feedback. Which we hope will be numerous! We take this opportunity to
           thank our partners who are following us in our projects.
         </p>
-        <p className="content_about">Happy driving to all.</p>
+        <p className="content_about">
+          Happy driving to all.
+          <FontAwesomeIcon
+            className="fab fa-react"
+            style={{
+              color: "#F58A07",
+              marginInline: "1rem",
+              paddingBlock: "1rem",
+            }}
+            icon={faHeart}
+          />
+        </p>
       </div>
     </div>
   );

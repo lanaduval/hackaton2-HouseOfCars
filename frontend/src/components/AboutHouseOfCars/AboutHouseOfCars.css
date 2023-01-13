@@ -3,11 +3,15 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin: 5rem 10rem;
+  margin-top: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  align-self: center;
 }
 
 .img_about {
-  width: 30rem;
+  width: 35rem;
   border-radius: 5px;
   box-shadow: #121217 0px 3px 8px;
 }
@@ -16,12 +20,14 @@
   font-family: "Sora";
   color: #eff0d1;
   margin-top: 0;
+  margin-left: 1rem;
 }
 .content_about {
   font-size: 1rem;
   font-family: "Sora";
   line-height: 1.5em;
   color: #eff0d1;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 391px) {
@@ -31,6 +37,8 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    margin-top: 5rem;
+    font-size: 1.2rem;
   }
   .img_about {
     width: 22rem;
@@ -41,5 +49,7 @@
 
   .titre_about {
     width: 22rem;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
   }
 }

@@ -57,17 +57,13 @@
 
 .logo {
   width: 200px;
-  margin: auto;
-  align-content: center;
+  margin-top: 2.1rem;
 }
 
 .header {
-  border-bottom: 1px solid #eff0d1;
+border-bottom: 1px solid #eff0d1;
 }
 
-.header a {
-  margin: auto;
-}
 
 @media screen and (max-width: 391px) {
   .logo {
